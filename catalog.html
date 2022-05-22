@@ -74,12 +74,18 @@
             </form>
           </section>
           <section class="hotels-search-results"><h2>НАЙДЕНО ГОСТИНИЦ: 38</h2>
-            <select class="price-filter">
-                <option selected>Сначала дешёвые</option>
+            <select class="price-filter" aria-label="Сортировка">
+                <option value="cheep" selected>Сначала дешёвые</option>
             </select>
-            <input type="image" src="#" alt="Мелкие карточки плиткой">
-            <input type="image" src="#" alt="Крупные карточки">
-            <input type="image" src="#" alt="Мелкие карточки списком">
+            <a class="card-view-small" href="#">
+                <span class="visually-hidden">Показать маленькие карточки плиткой</span>
+                </a>
+            <a class="card-view-big" href="#">
+                <span class="visually-hidden">Показать крупные карточки</span>
+                </a>
+                <a class="card-view-list" href="#">
+                    <span class="visually-hidden">Показать маленькие карточки списком</span>
+                </a>
         </section>
         <section class="catalog-list">
             <ul class="catalog-list-item">
@@ -155,7 +161,7 @@
             </ul>
             <div>
                 <label class="block-text-size" for="items-on-page-id">Гостиниц на странице:</label>
-                <select class="block-text-size" id="items-on-page">
+                <select class="block-text-size" id="items-on-page" aria-label="количество гостиниц на странице">
                     <option class="block-text-size" name="amount-items" value="1">1</option>
                     <option class="block-text-size" name="amount-items" value="2">2</option>
                     <option class="block-text-size" name="amount-items" value="3">3</option>
