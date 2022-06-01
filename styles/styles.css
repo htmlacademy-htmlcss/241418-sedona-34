@@ -29,14 +29,19 @@ ul .navigation-item {
 ul .navigation-user-item {
     list-style: none;
 }
+.navigation-link,
 .navigation-user-link,
+.footer-contacts-phone,
 .footer-about-developers {
+    color: #000000;
     text-decoration: none;   
 }
 .button-main {
     background-color: #756157;
 }
-.button-additional {
+.button-additional,
+.button-catalog-additional {
+    color: #FFFFFF;
     background-color: #82B3D3;
 }
 .small {
@@ -61,9 +66,13 @@ ul .navigation-user-item {
     line-height: 21px;
 }
 .main-index {
-    background-image: url(/images/main/background-index.jpg);
+    background-image: url("/images/main/background-index.jpg");
     background-size: 1200px 485px;
     background-repeat: no-repeat;
+}
+ul,
+li {
+    list-style: none;
 }
 .reasons h2,
 .search-title {
@@ -92,7 +101,7 @@ ul .navigation-user-item {
     text-align: center;
 }
 .subscribe {
-    background-image: url(/images/main/background-subscribe.jpg);
+    background-image: url("/images/main/background-subscribe.jpg");
     background-size: 1200px 411px;
     background-repeat: no-repeat;
     color: #FFFFFF;
