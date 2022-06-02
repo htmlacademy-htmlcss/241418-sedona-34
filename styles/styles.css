@@ -42,9 +42,19 @@ body {
     text-decoration: underline;
 }
 
+.favorites-header {
+    color: #000000;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+}
+
 .button-main {
     background-color: #756157;
     text-transform: uppercase;
+    text-align: center;
+    border-style: none;
 }
 
 .button-additional,
@@ -53,6 +63,8 @@ body {
     color: #FFFFFF;
     background-color: #82B3D3;
     text-transform: uppercase;
+    text-align: center;
+    border-style: none;
 }
 
 .small {
@@ -135,6 +147,7 @@ h3.reasons-title {
     font-family: "PT Sans";
     color: #FFFFFF;
     text-align: center;
+    border-style: none;
 }
 
 h2.subscribe-title {
@@ -149,7 +162,7 @@ h2.subscribe-title {
     color: #333333;
 }
 
-li.footer-social-item  {
+li.footer-social-item {
     list-style: none;
 }
 
