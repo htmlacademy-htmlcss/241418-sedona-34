@@ -2,7 +2,7 @@
     font-family: "PT Sans";
     font-weight: 400;
     font-style: normal;
-    src: url(/fonts/ptsans-400.woff2) format(woff2);
+    src: url("../fonts/ptsans-400.woff2") format(woff2);
     font-display: swap;
 }
 
@@ -10,12 +10,12 @@
     font-family: "PT Sans";
     font-weight: 700;
     font-style: normal;
-    src: url(/fonts/ptsans-400.woff2) format(woff2);
+    src: url("../fonts/ptsans-700.woff2") format(woff2);
     font-display: swap;
 }
 
 body {
-    font-family: "PT Sans";
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
@@ -42,14 +42,20 @@ ul .navigation-user-item {
     text-decoration: none;
 }
 
+.navigation-link-current {
+    text-decoration: underline;
+}
+
 .button-main {
     background-color: #756157;
+    text-transform: uppercase;
 }
 
 .button-additional,
 .button-catalog-additional {
     color: #FFFFFF;
     background-color: #82B3D3;
+    text-transform: uppercase;
 }
 
 .small {
@@ -95,10 +101,15 @@ li {
     font-weight: 700;
     text-align: center;
     color: #000000;
+    text-transform: uppercase;
 }
 
 .reasons h2+p {
     text-align: center;
+}
+
+h3.reasons-title {
+    text-transform: uppercase;
 }
 
 .background-basic {
@@ -126,6 +137,10 @@ li {
     background-repeat: no-repeat;
     color: #FFFFFF;
     text-align: center;
+}
+
+h2.subscribe-title {
+    text-transform: uppercase;
 }
 
 ::placeholder {
@@ -189,6 +204,7 @@ h2.hotels-search-results-header {
     line-height: 36px;
     font-weight: 700;
     color: #000000;
+    text-transform: uppercase;
 }
 
 select.price-filter {
@@ -213,6 +229,7 @@ a.button-card-main {
     font-weight: 700;
     text-align: center;
     text-decoration-line: none;
+    text-transform: uppercase;
 }
 
 a.button-card-additional {
@@ -223,6 +240,7 @@ a.button-card-additional {
     font-weight: 700;
     text-align: center;
     text-decoration-line: none;
+    text-transform: uppercase;
 }
 
 a.button-card-checked {
@@ -233,6 +251,7 @@ a.button-card-checked {
     font-weight: 700;
     text-align: center;
     text-decoration-line: none;
+    text-transform: uppercase;
 }
 
 p.card-rating-text-size {
@@ -251,6 +270,7 @@ p.card-rating-text-size {
     line-height: 36px;
     font-weight: 700;
 }
+
 .pagination-current {
     color: #000000;
     background-color: #F2F2F2;
@@ -259,12 +279,28 @@ p.card-rating-text-size {
     line-height: 36px;
     font-weight: 700;
 }
+
 h2.subscribe-header {
     color: #000000;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
+    text-transform: uppercase;
 }
+
 section.subscribe-catalog {
     text-align: center;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
