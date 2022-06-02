@@ -23,14 +23,10 @@ body {
     background-color: #FFFFFF;
 }
 
-ul .navigation-item {
+.navigation {
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
-    list-style: none;
-}
-
-ul .navigation-user-item {
     list-style: none;
 }
 
@@ -91,8 +87,7 @@ label.control {
     background-repeat: no-repeat;
 }
 
-ul,
-li {
+.reasons li {
     list-style: none;
 }
 
@@ -154,7 +149,7 @@ h2.subscribe-title {
     color: #333333;
 }
 
-ul .footer-social-item {
+li.footer-social-item  {
     list-style: none;
 }
 
