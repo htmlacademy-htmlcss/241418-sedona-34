@@ -113,11 +113,15 @@ label.control {
     text-transform: uppercase;
 }
 
-.reasons h2+p {
+.reasons p {
     text-align: center;
 }
 
-h3.reasons-title {
+.reasons h3 {
+    text-align: center;
+}
+
+.reasons-title {
     text-transform: uppercase;
 }
 
@@ -136,7 +140,7 @@ h3.reasons-title {
     color: #333333;
 }
 
-.search-title+p {
+section.search-hotel {
     text-align: center;
 }
 
@@ -150,7 +154,7 @@ h3.reasons-title {
     border-style: none;
 }
 
-h2.subscribe-title {
+.subscribe-title {
     text-transform: uppercase;
 }
 
@@ -173,19 +177,23 @@ li.footer-social-item {
     background-repeat: repeat;
 }
 
-a.breadcrumbs-link {
+.breadcrumbs-link {
     font-size: 16px;
     line-height: 21px;
     font-weight: 400;
 }
 
-h1.catalog-hotels-search-header {
+.breadcrumbs li {
+    list-style: none;
+}
+
+.catalog-hotels-search-header {
     font-size: 60px;
     line-height: 78px;
     font-weight: 700;
 }
 
-h4.data-item-header {
+.data-item-header {
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
@@ -211,7 +219,7 @@ button.button-catalog-reset {
     border-bottom-style: none;
 }
 
-h2.hotels-search-results-header {
+.hotels-search-results-header {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -226,12 +234,16 @@ select.price-filter {
     line-height: 21px;
 }
 
-h3.catalog-hotel-header {
+.catalog-hotel-header {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
     text-align: left;
     color: #000000;
+}
+
+.catalog li {
+    list-style: none;
 }
 
 a.button-card-main {
@@ -267,7 +279,7 @@ a.button-card-checked {
     text-transform: uppercase;
 }
 
-p.card-rating-text-size {
+.card-rating-text-size {
     background-color: #F2F2F2;
     font-size: 16px;
     line-height: 20px;
