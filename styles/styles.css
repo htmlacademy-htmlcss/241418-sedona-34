@@ -90,7 +90,7 @@ body {
 
 .block-text-size,
 label.control {
-    color: #333333;
+    color: #FFFFFF;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -176,8 +176,8 @@ li.footer-social-item {
 .catalog-hotels-search {
     color: #FFFFFF;
     background-image: url("/images/catalog/background-catalog.jpg");
-    background-size: 100% auto;
-    background-repeat: repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .breadcrumbs-link {
@@ -308,8 +308,10 @@ a.button-card-checked {
     font-weight: 700;
 }
 
-select.block-text-size {
+select.block-text-size,
+label.block-text-size {
     font-family: "PT Sans";
+    color: #333333;
 }
 
 h2.subscribe-header {
