@@ -53,6 +53,7 @@ ul .navigation-user-item {
 
 .button-additional,
 .button-catalog-additional {
+    font-family: "PT Sans";
     color: #FFFFFF;
     background-color: #82B3D3;
     text-transform: uppercase;
@@ -78,6 +79,7 @@ ul .navigation-user-item {
 
 .block-text-size,
 label.control {
+    color: #333333;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -135,6 +137,7 @@ h3.reasons-title {
     background-image: url("/images/main/background-subscribe.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
+    font-family: "PT Sans";
     color: #FFFFFF;
     text-align: center;
 }
@@ -192,6 +195,7 @@ button.button-catalog-additional {
 button.button-catalog-reset {
     color: #FFFFFF;
     background-color: transparent;
+    font-family: "PT Sans";
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
@@ -208,6 +212,7 @@ h2.hotels-search-results-header {
 }
 
 select.price-filter {
+    font-family: "PT Sans";
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -278,6 +283,10 @@ p.card-rating-text-size {
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
+}
+
+select.block-text-size {
+    font-family: "PT Sans";
 }
 
 h2.subscribe-header {
