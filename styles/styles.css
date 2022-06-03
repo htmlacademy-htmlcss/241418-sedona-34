@@ -62,7 +62,7 @@ body {
 
 .button-additional,
 .button-catalog-additional {
-    font-family: "PT Sans";
+    font-family: inherit;
     color: #FFFFFF;
     background-color: #82B3D3;
     text-transform: uppercase;
@@ -156,7 +156,7 @@ section.search-hotel {
     background-image: url("/images/main/background-subscribe.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    font-family: "PT Sans";
+    font-family: inherit;
     color: #FFFFFF;
     text-align: center;
     border-style: none;
@@ -219,7 +219,7 @@ button.button-catalog-additional {
 button.button-catalog-reset {
     color: #FFFFFF;
     background-color: transparent;
-    font-family: "PT Sans";
+    font-family: inherit;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
@@ -236,7 +236,7 @@ button.button-catalog-reset {
 }
 
 select.price-filter {
-    font-family: "PT Sans";
+    font-family: inherit;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -315,7 +315,7 @@ a.button-card-checked {
 
 select.block-text-size,
 label.block-text-size {
-    font-family: "PT Sans";
+    font-family: inherit;
     color: #333333;
 }
 
