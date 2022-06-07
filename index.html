@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Sedona</title>
-    <link rel="stylesheet" href="/styles/styles.css">
-  </head>
-  <body>
-    <header class="page-header">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sedona</title>
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header-container">
       <a class="logo-link">
         <img class="logo" src="/images/header/logo.svg" width="139" height="70" alt="логотип города седона.">
       </a>
@@ -41,42 +44,46 @@
           </li>
         </ul>
       </nav>
-    </header>
-    <main class="main-index">
+    </div>
+  </header>
+  <main class="main-index main-container">
+    <div class="page-container">
       <h1 class="visually-hidden">sedona</h1>
-      <section class="logo-welcome"> 
-        <img src="/images/main/welcome-icon.svg" width="458" height="352" alt="welcome to the gorgeous. Sedona because the grand canyon sucks.">
-        <img src="/images/main/background-index-decoration.svg" width="1200" height="57" alt="">
+      <section class="logo-welcome">
+        <img src="/images/main/welcome-icon.svg" width="458" height="352"
+          alt="welcome to the gorgeous. Sedona because the grand canyon sucks.">
       </section>
       <section class="reasons">
-        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-        <ol class="reasons-list">
+        <div class="reasons-description>">
+          <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
+        <ul class="reasons-list">
           <li class="reasons-item background-basic">
             <h3 class="reasons-title">настоящий городок</h3>
             <p class="block-text-size">— №1 —</p>
             <p class="block-text-size">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="/images/main/reasons-sedona.jpg" width="800" height="384" alt="город седона">
           </li>
-          <ul>
-            <li class="reasons-list background-second-1">
-              <img src="/images/main/reasons-icon-home.svg" width="75" height="72" alt="">
-              <h3 class="reasons-title">жильё</h3>
-              <p class="block-text-size">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </li>
-            <li class="reasons-list">
-              <img src="/images/main/reasons-icon-burger.svg" width="75" height="72" alt="">
-              <h3 class="reasons-title">еда</h3>
-              <p class="block-text-size">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li class="reasons-list background-second-1">
-              <img src="/images/main/reasons-icon-presents.svg" width="75" height="72" alt="">
-              <h3 class="reasons-title">сувениры</h3>
-              <p class="block-text-size">Не только китайского, но и настоящего местного производства!</p>
-            </li>
-          </ul>
+          <li><img src="/images/main/reasons-sedona.jpg" width="800" height="384" alt="город седона">
+          </li>
+          <li class="reasons-list background-second-1">
+            <img src="/images/main/reasons-icon-home.svg" width="75" height="72" alt="">
+            <h3 class="reasons-title">жильё</h3>
+            <p class="block-text-size">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="reasons-list background-second-3">
+            <img src="/images/main/reasons-icon-burger.svg" width="75" height="72" alt="">
+            <h3 class="reasons-title">еда</h3>
+            <p class="block-text-size">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="reasons-list background-second-1">
+            <img src="/images/main/reasons-icon-presents.svg" width="75" height="72" alt="">
+            <h3 class="reasons-title">сувениры</h3>
+            <p class="block-text-size">Не только китайского, но и настоящего местного производства!</p>
+          </li>
+          <li><img src="/images/main/reasons-evils-bridge.jpg" width="800" height="384" alt="мост дьявола">
+          </li>
           <li class="reasons-item background-basic">
-            <img src="/images/main/reasons-evils-bridge.jpg" width="800" height="384" alt="мост дьявола">
             <h3 class="reasons-title">там есть мост дьявола</h3>
             <p class="block-text-size">— №2 —</p>
             <p class="block-text-size">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -96,11 +103,12 @@
             <p class="block-text-size">— №5 —</p>
             <p class="block-text-size">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-        </ol>
+        </ul>
       </section>
       <section class="search-hotel">
         <h2 class="search-title">заинтересовались?</h2>
-        <p class="text-basic">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="text-basic">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+        </p>
         <a class="button-main big" href="#">поиск гостиницы в седоне</a>
       </section>
       <section class="subscribe">
@@ -111,8 +119,10 @@
           <button class="button-additional big" type="submit">подписаться</button>
         </form>
       </section>
-    </main>
-    <footer class="page-footer">
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer-container">
       <section class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -135,7 +145,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="footer-contacts">
         <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
       <section class="footer-about-developers">
@@ -144,6 +154,8 @@
           <span class="visually-hidden">Логотип разработчиков</span>
         </a>
       </section>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
