@@ -145,7 +145,7 @@ label.control {
 }
 
 .main-index {
-    background-image: url("/images/main/background-index.jpg");
+    background-image: url("../images/main/background-index.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -264,7 +264,7 @@ label.control {
     display: flex;
     flex-direction: column;
     height: 411px;
-    background-image: url("/images/main/background-subscribe.jpg");
+    background-image: url("../images/main/background-subscribe.jpg");
     background-repeat: no-repeat;
     font-family: inherit;
     color: #FFFFFF;
@@ -343,7 +343,7 @@ li.footer-social-item {
 }
 .catalog-hotels-search {
     color: #FFFFFF;
-    background-image: url("/images/catalog/background-catalog.jpg");
+    background-image: url("../images/catalog/background-catalog.jpg");
     background-size: 1200px auto;
     margin: 0;
     padding: 0;
