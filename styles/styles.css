@@ -593,22 +593,29 @@ label.block-text-size {
     color: #333333;
 }
 
+.subscribe-catalog {
+    text-align: center;
+    width: 1200px;
+}
+
 .subscribe-header {
     color: #000000;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 0;
+    padding-top: 90px;
+    padding-bottom: 30px;
 }
 
-.subscribe-catalog {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 1200px;
+.subscribe-catalog p {
+    padding: 0 85px 45px;
 }
 
 .subscribe-catalog-input {
+    margin: 0;
+    margin-bottom: 90px;
     width: 600px;
     height: 60px;
     background: #F2F2F2;
@@ -616,6 +623,8 @@ label.block-text-size {
 }
 
 .subscribe-form button {
+    margin: 0;
+    margin-bottom: 90px;
     width: 200px;
     height: 60px;
 }
