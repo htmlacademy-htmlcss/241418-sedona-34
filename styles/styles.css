@@ -54,6 +54,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .navigation-item {
@@ -157,27 +158,26 @@ label.control {
 }
 
 .logo-welcome {
-    display: flex;
-    margin: 51px 371px 82px 371px;
+    text-align: center;
 }
-
-.reasons-description {
-    width: 1200px;
-    height: 282px;
-}
-
-.reasons h2 {
-    padding: 63px 290px 31px 290px;
-}
-
-.reasons p {}
 
 .reasons {
-    display: flex;
-    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0;
 }
 
-.reasons-list {
+.reasons p {
+    margin: 0px;
+    margin-bottom: 90px;
+    text-align: center;
+}
+
+.reasons-sedona-img,
+.reasons-evils-bridge-img {
+    display: block;
+}
+
+.reasons-item {
     margin: 0;
     padding: 0;
     display: flex;
@@ -193,77 +193,90 @@ label.control {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
+    padding-top: 60px;
     text-align: center;
     color: #000000;
     text-transform: uppercase;
-}
-
-.reasons p {
-    text-align: center;
-    padding: 0 85px;
-}
-
-.reasons h3 {
-    text-align: center;
-    padding: 0 85px;
 }
 
 .reasons-title {
     text-transform: uppercase;
 }
 
+.reasons-title h3 {
+    text-align: center;
+    margin: 0;
+    padding-top: 30px;
+}
 
 .background-basic {
+    box-sizing: border-box;
     background-color: #82B3D3;
     color: #FFFFFF;
-    width: 400px;
-    height: 384px;
+    text-align: center;
+}
+
+.background-basic h3 {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+
+.background-basic p {
+    margin: 0;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 30px;
 }
 
 .background-second-1 {
     background-color: rgba(131, 179, 211, 0.12);
     color: #333333;
     width: 400px;
-    height: 384px;
+    margin: 0;
+    text-align: center;
 }
 
 .background-second-2 {
     background-color: rgba(131, 179, 211, 0.2);
     color: #333333;
-    width: 400px;
-    height: 384px;
+    margin: 0;
+    text-align: center;
+
 }
 
 .background-second-3 {
     background-color: #FFFFFF;
     color: #333333;
-    width: 400px;
-    height: 384px;
-}
-
-.search-hotel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 1200px;
-    height: 417px;
+    margin: 0;
     text-align: center;
 }
 
+.search-hotel {
+    box-sizing: border-box;
+    align-items: center;
+    width: 1200px;
+    text-align: center;
+}
+
+.search-title {
+    margin: 0;
+    padding-top: 90px;
+}
+
 .search-hotel p {
-    margin: auto 304px;
+    margin: 0;
+    padding: 30px 85px 55px;
 }
 
 .search-hotel a {
     width: 574px;
-    padding: 12px 15px;
-    margin: auto 313px;
+    text-align: center;
+    margin-bottom: 90px;
 }
 
 .subscribe {
-    display: flex;
-    flex-direction: column;
-    height: 411px;
     background-image: url("../images/main/background-subscribe.jpg");
     background-repeat: no-repeat;
     font-family: inherit;
@@ -276,21 +289,26 @@ label.control {
 
 .subscribe-title {
     text-transform: uppercase;
-    padding: auto 398px;
+    margin: 0;
+    padding-top: 90px;
+    padding-bottom: 30px;
 }
 
-.subscribe-form {
-    display: flex;
-    justify-content: center;
+.subscribe p {
+    padding: 0 85px 45px;
 }
 
 .subscribe input {
+    margin: 0;
+    margin-bottom: 90px;
     width: 600px;
     height: 60px;
     background: #F2F2F2;
 }
 
 .subscribe button {
+    margin: 0;
+    margin-bottom: 90px;
     width: 200px;
     height: 60px;
 }
@@ -305,6 +323,9 @@ label.control {
 
 .page-footer-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: baseline;
     width: 1200px;
     margin: 0 auto;
@@ -326,10 +347,10 @@ li.footer-social-item {
 }
 
 .footer-contacts-phone {
-    display: flex;
-    justify-content: center;
-    width: 720px;
-    height: 50px;
+    margin: 0;
+    padding: 0 195px;
+    text-align: center;
+    min-height: 50px;
 }
 
 .footer-about-developers {
@@ -341,6 +362,7 @@ li.footer-social-item {
     margin: 0;
     padding: 0;
 }
+
 .catalog-hotels-search {
     color: #FFFFFF;
     background-image: url("../images/catalog/background-catalog.jpg");
