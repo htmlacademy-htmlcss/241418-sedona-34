@@ -214,6 +214,7 @@ label.control {
     background-color: #82B3D3;
     color: #FFFFFF;
     text-align: center;
+    width: 1200px;
 }
 
 .background-basic h3 {
@@ -299,7 +300,6 @@ label.control {
 }
 
 .subscribe input {
-    margin: 0;
     margin-bottom: 90px;
     width: 600px;
     height: 60px;
@@ -307,7 +307,6 @@ label.control {
 }
 
 .subscribe button {
-    margin: 0;
     margin-bottom: 90px;
     width: 200px;
     height: 60px;
@@ -614,7 +613,6 @@ label.block-text-size {
 }
 
 .subscribe-catalog-input {
-    margin: 0;
     margin-bottom: 90px;
     width: 600px;
     height: 60px;
@@ -623,7 +621,6 @@ label.block-text-size {
 }
 
 .subscribe-form button {
-    margin: 0;
     margin-bottom: 90px;
     width: 200px;
     height: 60px;
