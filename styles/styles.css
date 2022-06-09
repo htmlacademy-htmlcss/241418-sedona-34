@@ -188,6 +188,10 @@ label.control {
     list-style: none;
 }
 
+.reasons-list img {
+    margin: 0;
+    padding-top: 80px;
+}
 .reasons h2,
 .search-title {
     font-size: 30px;
