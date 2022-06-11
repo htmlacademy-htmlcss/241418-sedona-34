@@ -58,51 +58,53 @@
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">
-              <img src="./images/catalog/breadcrumbs-icon-arrow.svg" width="5" height="8" alt=""> Гостиницы</a>
+              <img src="./images/catalog/breadcrumbs-icon-arrow.svg" width="5" height="8" alt="">
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <p>Гостиницы</p>
           </li>
         </ul>
         <h2 class="visually-hidden">Каталог гостиниц с фильтрами</h2>
         <form class="hotels-search-filter" action="#" method="get">
-          <div class="filter-data-container">
-            <fieldset class="filter-data infrastructure">
-              <legend class="data-item">
-                <h4 class="data-item-header">Инфраструктура:</h4>
-              </legend>
-              <label class="control">
-                <input class="control-input" type="checkbox" name="infrastructure" value="pool" checked>Бассейн
-              </label>
-              <label class="control">
-                <input class="control-input" type="checkbox" name="infrastructure" value="parking" checked>Парковка
-              </label>
-              <label class="control">
-                <input class="control-input" type="checkbox" name="infrastructure" value="wi-fi">Wi-Fi
-              </label>
-            </fieldset>
-            <fieldset class="filter-data type-of-house">
-              <legend class="data-item">
-                <h4 class="data-item-header">Тип Жилья:</h4>
-              </legend>
-              <label class="control">
-                <input class="control-input" type="radio" name="house-type" value="hotel" checked>Гостиница
-              </label>
-              <label class="control">
-                <input class="control-input" type="radio" name="house-type" value="motel">Мотель
-              </label>
-              <label class="control">
-                <input class="control-input" type="radio" name="house-type" value="Apartments">Апартаменты
-              </label>
-            </fieldset>
-            <fieldset class="filter-data">
-              <legend class="data-item price-for-house">
-                <h4 class="data-item-header">Стоимость, ₽:</h4>
-              </legend>
-              <!--тут будет вывод ОТ и ДО-->
-              0 <input class="price-input" type="range" min="0" max="12000" step="1"> 9000
-            </fieldset>
-            <div class="filter-buttons">
-              <button class="button-catalog-additional" type="submit">применить</button>
-              <button class="button-catalog-reset" type="reset">Сбросить</button>
-            </div>
+          <fieldset class="filter-data infrastructure">
+            <legend class="data-item">
+              <h4 class="data-item-header">Инфраструктура:</h4>
+            </legend>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="infrastructure" value="pool" checked>Бассейн
+            </label>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="infrastructure" value="parking" checked>Парковка
+            </label>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="infrastructure" value="wi-fi">Wi-Fi
+            </label>
+          </fieldset>
+          <fieldset class="filter-data type-of-house">
+            <legend class="data-item">
+              <h4 class="data-item-header">Тип Жилья:</h4>
+            </legend>
+            <label class="control">
+              <input class="control-input" type="radio" name="house-type" value="hotel" checked>Гостиница
+            </label>
+            <label class="control">
+              <input class="control-input" type="radio" name="house-type" value="motel">Мотель
+            </label>
+            <label class="control">
+              <input class="control-input" type="radio" name="house-type" value="Apartments">Апартаменты
+            </label>
+          </fieldset>
+          <fieldset class="filter-data">
+            <legend class="data-item price-for-house">
+              <h4 class="data-item-header">Стоимость, ₽:</h4>
+            </legend>
+            <!--тут будет вывод ОТ и ДО-->
+            0 <input class="price-input" type="range" min="0" max="12000" step="1"> 9000
+          </fieldset>
+          <div class="filter-buttons">
+            <button class="button-catalog-additional" type="submit">применить</button>
+            <button class="button-catalog-reset" type="reset">Сбросить</button>
           </div>
         </form>
       </section>
@@ -111,18 +113,20 @@
         <select class="price-filter" aria-label="Сортировка">
           <option value="cheep" selected>Сначала дешёвые</option>
         </select>
-        <a class="card-view-small" href="#">
-          <span class="visually-hidden">Показать маленькие карточки плиткой</span>
-          <img src="./images/catalog/view-icon-small.svg" width="16" height="14" alt="">
-        </a>
-        <a class="card-view-big" href="#">
-          <span class="visually-hidden">Показать крупные карточки</span>
-          <img src="./images/catalog/view-icon-big.svg" width="16" height="14" alt="">
-        </a>
-        <a class="card-view-list" href="#">
-          <span class="visually-hidden">Показать маленькие карточки списком</span>
-          <img src="./images/catalog/view-icon-list.svg" width="16" height="14" alt="">
-        </a>
+        <div class="card-view">
+          <a class="card-view-small" href="#">
+            <span class="visually-hidden">Показать маленькие карточки плиткой</span>
+            <img src="./images/catalog/view-icon-small.svg" width="16" height="14" alt="">
+          </a>
+          <a class="card-view-big" href="#">
+            <span class="visually-hidden">Показать крупные карточки</span>
+            <img src="./images/catalog/view-icon-big.svg" width="16" height="14" alt="">
+          </a>
+          <a class="card-view-list" href="#">
+            <span class="visually-hidden">Показать маленькие карточки списком</span>
+            <img src="./images/catalog/view-icon-list.svg" width="16" height="14" alt="">
+          </a>
+        </div>
       </section>
       <section class="catalog">
         <ul class="catalog-list">

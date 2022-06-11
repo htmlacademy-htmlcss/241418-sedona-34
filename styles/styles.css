@@ -403,83 +403,107 @@ li.footer-social-item {
     margin-left: auto;
 }
 
-.catalog-hotels-search-header {
-    margin: 0;
-    padding: 0;
-}
 
 .catalog-hotels-search {
     color: #FFFFFF;
     background-image: url("../images/catalog/background-catalog.jpg");
-    background-size: 1200px auto;
+    background-size: cover;
     margin: 0;
-    padding: 0;
-}
-
-.breadcrumbs {
-    display: flex;
-    max-width: 300px;
-    justify-content: start;
-    align-items: baseline;
-
-}
-
-.breadcrumbs-link {
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: 400;
-    margin-right: 10px;
-}
-
-.breadcrumbs li {
-    list-style: none;
-}
-
-.filter-data-container {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 1060px;
-}
-
-.infrastructure {
-    display: flex;
-    flex-direction: column;
-    border-style: none;
-    width: 151px;
-    margin: auto 35px 70px 70px;
-}
-
-.type-of-house {
-    display: flex;
-    flex-direction: column;
-    border-style: none;
-    width: 146px;
-    margin: auto auto 70px 35px;
-}
-
-.price-for-house {
-    display: flex;
-    flex-direction: column;
-    max-width: 289px;
-    margin: auto 35px 70px auto;
-}
-
-.filter-buttons {
-    display: flex;
-    flex-direction: column;
-    margin: 60px 70px 70px 35px;
+    padding: 35px 70px 70px 70px;
 }
 
 .catalog-hotels-search-header {
     font-size: 60px;
     line-height: 78px;
     font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0;
 }
 
-.data-item-header {
-    font-size: 20px;
-    line-height: 26px;
-    font-weight: 700;
+.breadcrumbs {
+    display: flex;
+    max-width: 300px;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+
+}
+
+.breadcrumbs-link,
+p {
+    display: block;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.breadcrumbs li {
+    list-style: none;
+    padding-right: 10px;
+}
+
+.hotels-search-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.filter-data {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.filter-data h4 {
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.control {
+    padding-bottom: 15px;
+}
+
+.infrastructure {
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+    min-width: 151px;
+    margin-right: 70px;
+}
+
+.type-of-house {
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+    min-width: 146px;
+    margin-right: 175px;
+}
+
+.price-for-house {
+    display: flex;
+    flex-direction: column;
+    max-width: 289px;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.filter-buttons {
+    padding: 10px 35px;
+}
+
+.filter-buttons button {
+    border-style: none;
 }
 
 .button-catalog-additional {
@@ -502,15 +526,19 @@ li.footer-social-item {
     font-weight: 400;
     text-align: center;
     border-bottom-style: none;
-    padding-top: 20px;
+    width: 160px;
+    height: 48px;
 }
 
 .hotels-search-results {
     display: flex;
-    width: 1060px;
+    box-sizing: border-box;
+    width: 1200px;
     height: 49px;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
+    padding: 50px 72px;
 }
 
 .hotels-search-results-header {
@@ -519,9 +547,22 @@ li.footer-social-item {
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
-    width: 338px;
-    margin: 0;
-    padding: 0;
+}
+
+.card-view {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-view a {
+    padding-right: 8px;
+}
+
+.data-item-header {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
 }
 
 .price-filter {
