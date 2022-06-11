@@ -113,77 +113,99 @@
         <select class="price-filter" aria-label="Сортировка">
           <option value="cheep" selected>Сначала дешёвые</option>
         </select>
-        <div class="card-view">
-          <a class="card-view-small" href="#">
-            <span class="visually-hidden">Показать маленькие карточки плиткой</span>
-            <img src="./images/catalog/view-icon-small.svg" width="16" height="14" alt="">
-          </a>
-          <a class="card-view-big" href="#">
-            <span class="visually-hidden">Показать крупные карточки</span>
-            <img src="./images/catalog/view-icon-big.svg" width="16" height="14" alt="">
-          </a>
-          <a class="card-view-list" href="#">
-            <span class="visually-hidden">Показать маленькие карточки списком</span>
-            <img src="./images/catalog/view-icon-list.svg" width="16" height="14" alt="">
-          </a>
-        </div>
+        <ul class="card-view">
+          <li class="card-view-item">
+            <a class="card-view-small" href="#">
+              <span class="visually-hidden">Показать маленькие карточки плиткой</span>
+              <img src="./images/catalog/view-icon-small.svg" width="16" height="14" alt="">
+            </a>
+          </li>
+          <li class="card-view-item">
+            <a class="card-view-big" href="#">
+              <span class="visually-hidden">Показать крупные карточки</span>
+              <img src="./images/catalog/view-icon-big.svg" width="16" height="14" alt="">
+            </a>
+          </li>
+          <li class="card-view-item">
+            <a class="card-view-list" href="#">
+              <span class="visually-hidden">Показать маленькие карточки списком</span>
+              <img src="./images/catalog/view-icon-list.svg" width="16" height="14" alt="">
+            </a>
+          </li>
+        </ul>
       </section>
       <section class="catalog">
         <ul class="catalog-list">
           <li class="catalog-item">
-            <img src="./images/catalog/hotel-amara-resort-spa.jpg" width="300" height="211" alt="гостиница">
-            <h3 class="catalog-hotel-header">Amara Resort & Spa</h3>
-            <p class="block-text-size">Гостиница</p>
-            <p class="block-text-size">От 4000 ₽</p>
-            <a class="button card-main" href="#">подробнее</a>
-            <a class="button card-additional" href="#">в избранное</a>
-            <img src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
-            <img src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
-            <img src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
-            <img src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
-            <p class="card-rating-text-size">РЕЙТИНГ: 8,5</p>
+            <div class="catalog-item-img">
+              <img src="./images/catalog/hotel-amara-resort-spa.jpg" width="300" height="211" alt="гостиница">
+              <h3 class="catalog-hotel-header">Amara Resort & Spa</h3>
+            </div>
+            <div class="catalog-item-description">
+              <p class="block-text-size">Гостиница</p>
+              <p class="block-text-size">От 4000 ₽</p>
+              <a class="button card-main" href="#">подробнее</a>
+              <a class="button card-additional" href="#">в избранное</a>
+              <img class="first-star" src="./images/catalog/star-icon.svg">
+              <img src="./images/catalog/star-icon.svg">
+              <img src="./images/catalog/star-icon.svg">
+              <img src="./images/catalog/star-icon.svg">
+              <p class="card-rating-text-size">РЕЙТИНГ: 8,5</p>
+            </div>
           </li>
           <li class="catalog-item">
-            <img src="./images/catalog/hotel-villas-at-poco-diablo.jpg" width="300" height="211" alt="гостиница">
-            <h3 class="catalog-hotel-header">Villas at Poco Diablo</h3>
-            <p class="block-text-size">Гостиница</p>
-            <p class="block-text-size">От 5000 ₽</p>
-            <a class="button card-main" href="#">подробнее</a>
-            <a class="button card-checked" href="#">в избранном</a>
-            <img src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
-            <img src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
-            <img src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
-            <img src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
-            <p class="card-rating-text-size">РЕЙТИНГ: 9,2</p>
+            <div class="catalog-item-img">
+              <img src="./images/catalog/hotel-villas-at-poco-diablo.jpg" width="300" height="211" alt="гостиница">
+              <h3 class="catalog-hotel-header">Villas at Poco Diablo</h3>
+            </div>
+            <div class="catalog-item-description">
+              <p class="block-text-size">Гостиница</p>
+              <p class="block-text-size">От 5000 ₽</p>
+              <a class="button card-main" href="#">подробнее</a>
+              <a class="button card-checked" href="#">в избранном</a>
+              <img class="first-star" src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
+              <img src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
+              <img src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
+              <img src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
+              <p class="card-rating-text-size">РЕЙТИНГ: 9,2</p>
+            </div>
           </li>
           <li class="catalog-item">
-            <img src="./images/catalog/hotel-desert-quail-inn.jpg" width="300" height="211" alt="гостиница">
-            <h3 class="catalog-hotel-header">Desert Quail Inn</h3>
-            <p class="block-text-size">Гостиница</p>
-            <p class="block-text-size">От 2500 ₽</p>
-            <a class="button card-main" href="#">подробнее</a>
-            <a class="button card-additional" href="#">в избранное</a>
-            <img src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
-            <img src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
-            <img src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
-            <p class="card-rating-text-size">РЕЙТИНГ: 6,9</p>
+            <div class="catalog-item-img">
+              <img src="./images/catalog/hotel-desert-quail-inn.jpg" width="300" height="211" alt="гостиница">
+              <h3 class="catalog-hotel-header">Desert Quail Inn</h3>
+            </div>
+            <div class="catalog-item-description">
+              <p class="block-text-size">Гостиница</p>
+              <p class="block-text-size">От 2500 ₽</p>
+              <a class="button card-main" href="#">подробнее</a>
+              <a class="button card-additional" href="#">в избранное</a>
+              <img class="first-star" src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
+              <img src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
+              <img src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
+              <p class="card-rating-text-size">РЕЙТИНГ: 6,9</p>
+            </div>
           </li>
           <li class="catalog-item">
-            <img src="./images/catalog/hotel-greentree-inn.jpg" width="300" height="211" alt="гостиница">
-            <h3 class="catalog-hotel-header">GreenTree Inn</h3>
-            <p class="block-text-size">Гостиница</p>
-            <p class="block-text-size">От 1500 ₽</p>
-            <a class="button card-main" href="#">подробнее</a>
-            <a class="button card-additional" href="#">в избранное</a>
-            <img src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
-            <img src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
-            <p class="card-rating-text-size">РЕЙТИНГ: 5,0</p>
+            <div class="catalog-item-img">
+              <img src="./images/catalog/hotel-greentree-inn.jpg" width="300" height="211" alt="гостиница">
+              <h3 class="catalog-hotel-header">GreenTree Inn</h3>
+            </div>
+            <div class="catalog-item-description">
+              <p class="block-text-size">Гостиница</p>
+              <p class="block-text-size">От 1500 ₽</p>
+              <a class="button card-main" href="#">подробнее</a>
+              <a class="button card-additional" href="#">в избранное</a>
+              <img class="first-star" src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
+              <img src="./images/catalog/star-icon.svg" width="18" height="17" alt="звезда">
+              <p class="card-rating-text-size">РЕЙТИНГ: 5,0</p>
+            </div>
           </li>
         </ul>
         <div class="pagination-container">
           <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
+            <li class="pagination-item pagination-current">
+              <a class="pagination-link">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -203,7 +225,7 @@
           </ul>
           <div class="page-number">
             <label class="block-text-size" for="items-on-page-id">Гостиниц на странице:</label>
-            <select class="block-text-size" id="items-on-page-id" aria-label="количество гостиниц на странице">
+            <select class="items-on-page block-text-size" id="items-on-page-id" aria-label="количество гостиниц на странице">
               <option class="block-text-size" value="1">1</option>
               <option class="block-text-size" value="2">2</option>
               <option class="block-text-size" value="3">3</option>
