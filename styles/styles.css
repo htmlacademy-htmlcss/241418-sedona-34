@@ -194,6 +194,10 @@ label.control {
 .reasons p {
     padding: 0 30px;
     margin-bottom: 90px;
+    /* font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333333; */
 }
 
 .reasons-sedona-img,
@@ -461,8 +465,7 @@ li.footer-social-item {
 
 }
 
-.breadcrumbs-link,
-p {
+.breadcrumbs-item p {
     display: block;
     font-size: 16px;
     line-height: 21px;
@@ -806,6 +809,7 @@ img.first-star {
     border-radius: 4px;
     padding-top: 12px;
 }
+
 .pagination-item:nth-last-child(1) {
     margin-right: 0;
 }
@@ -832,6 +836,7 @@ img.first-star {
     text-align: left;
     padding-right: 50px;
 }
+
 select.block-text-size,
 label.block-text-size {
     font-family: inherit;
@@ -843,7 +848,7 @@ label.block-text-size {
     height: 49px;
     border: #E5E5E5 solid 2px;
     border-radius: 4px;
-} 
+}
 
 .subscribe-catalog {
     text-align: center;
