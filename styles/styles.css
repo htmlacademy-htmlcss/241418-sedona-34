@@ -29,7 +29,7 @@ body {
 
 .page-header-container {
     width: 1060px;
-    height: 65px;
+    height: 66px;
     margin: 0 auto;
     display: flex;
 }
@@ -57,8 +57,10 @@ body {
     flex-wrap: wrap;
 }
 
-.navigation-item {
-    padding: 20px 17px;
+.navigation-link {
+    display: block;
+    margin: 10px;
+    padding: 10px;
 }
 
 .navigation-user {
@@ -66,10 +68,16 @@ body {
     flex-direction: row;
     justify-content: end;
     align-items: baseline;
-    margin: auto;
+    margin: 0;
     padding: 0;
     list-style: none;
     width: 300px;
+}
+
+.navigation-user-link {
+    display: block;
+    margin: 10px;
+    padding: 10px;
 }
 
 .navigation-link,
