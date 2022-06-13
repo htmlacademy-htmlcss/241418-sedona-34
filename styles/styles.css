@@ -101,6 +101,8 @@ img.logo {
 
 .navigation-link-current {
     text-decoration: underline;
+    text-decoration-color: #756157;
+    text-decoration-line:underline;
 }
 
 .navigation-user-item:nth-child(3) a {
