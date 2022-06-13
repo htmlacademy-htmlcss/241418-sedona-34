@@ -29,13 +29,23 @@ body {
 
 .page-header-container {
     width: 1060px;
-    height: 66px;
     margin: 0 auto;
     display: flex;
 }
 
 .main-container {
     flex-grow: 1;
+}
+
+.logo {
+    width: 139px;
+    margin-right: 30px;
+}
+
+img.logo {
+    display: block;
+    margin: 0;
+    margin-bottom: -5px;
 }
 
 .navigation {
@@ -60,27 +70,24 @@ body {
 
 .navigation-link {
     display: block;
-    margin: 10px;
-    padding: 10px;
+    padding: 20px 17px;
 }
 
 .navigation-user {
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    justify-content: end;
     align-items: center;
     margin: 0;
     padding: 0;
     list-style: none;
     width: 300px;
-    text-align: center;
 }
 
 .navigation-user-link {
-    display: block;
-    margin: 10px;
-    padding: 10px;
+    min-width: 18px;
+    min-height: 18px;
+    display: block; 
+    padding: 20px 17px;
 }
 
 .navigation-link,
@@ -103,10 +110,6 @@ body {
     min-width: 160px;
     padding: 9px 10px 8px;
 }
-/* 
-.navigation-user-item a {
-    padding: 4px 10px;
-} */
 
 .favorites-header {
     color: #000000;
@@ -169,17 +172,24 @@ label.control {
     margin: 0 auto;
 }
 
-.logo {
-    width: 139px;
-    margin-right: 30px;
-    margin-bottom: -5px;
-}
 
 .logo-welcome {
     background-image: url("../images/main/background-index.jpg");
     background-size: cover;
     text-align: center;
-    padding-bottom: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-welcome-img {
+    padding-top: 51px;
+    padding-bottom: 25px;
+}
+
+.background-index-decoration-img {
+    display: block;
+    margin-bottom: 63px;
+    padding: 0;
 }
 
 .reasons {
@@ -197,10 +207,6 @@ label.control {
 .reasons p {
     padding: 0 30px;
     margin-bottom: 90px;
-    /* font-size: 22px;
-    line-height: 26px;
-    font-weight: 400;
-    color: #333333; */
 }
 
 .reasons-sedona-img,
@@ -397,7 +403,6 @@ label.control {
 }
 
 .subscribe button {
-    /* box-sizing: border-box; */
     width: 200px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
