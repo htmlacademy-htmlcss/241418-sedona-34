@@ -76,11 +76,12 @@ img.logo {
 .navigation-user {
     box-sizing: border-box;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin: 0;
     padding: 0;
     list-style: none;
-    width: 300px;
+    min-width: 265px;
 }
 
 .navigation-user-link {
