@@ -413,47 +413,61 @@ label.control {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 1200px;
-    height: 120px;
     margin: 0;
-}
-
-li.footer-social-item {
-    list-style: none;
-    padding: 13px 12px;
-}
-
-.footer-social {
-    max-width: 190px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: auto;
 }
 
 .footer-social-list {
     display: flex;
-    flex-direction: row;
+    max-width: 190px;
     margin: 0;
+    padding: 0;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.footer-social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    width: 47px;
+    height: 40px;
+    padding: 40px 0;
+}
+
+.social-link a {
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-contacts {
+    display: flex;
+    min-width: 360px;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-contacts a {
-    margin-left: auto;
-    margin-right: auto;
-    padding: auto;
-    min-height: 50px;
+    margin: 0;
     font-size: 40px;
     line-height: 40px;
     font-weight: 400;
 }
 
 .footer-about-developers {
-    align-self: center;
-    max-width: 115px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: auto;
+    display: flex;
+    min-width: 120px;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    padding-right: 70px;
+    padding-left: 70px;
 }
 
 
