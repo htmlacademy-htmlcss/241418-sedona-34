@@ -95,17 +95,18 @@ body {
     text-decoration: underline;
 }
 
-.navigation-user-item:nth-child(3) {
+.navigation-user-item:nth-child(3) a {
     box-sizing: border-box;
+    display: inline-block;
     background-color: #756157;
     border-radius: 4px;
     min-width: 160px;
-    min-height: 37px;
+    padding: 9px 10px 8px;
 }
-
+/* 
 .navigation-user-item a {
     padding: 4px 10px;
-}
+} */
 
 .favorites-header {
     color: #000000;
@@ -342,9 +343,10 @@ label.control {
 .search-hotel a {
     background-color: #756157;
     border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
     width: 574px;
-    height: 60px;
-    padding: 18px 150px;
+    padding: 12px;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -375,21 +377,31 @@ label.control {
     color: #FFFFFF;
 }
 
+.subscribe-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 600px;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
 .subscribe input {
     border-style: none;
     width: 600px;
-    height: 60px;
     background: #F2F2F2;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
+    padding: 12px;
 }
 
 .subscribe button {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     width: 200px;
-    height: 60px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+    padding: 12px;
 }
 
 .page-footer-container {
@@ -544,19 +556,22 @@ li.footer-social-item {
 .button-catalog-additional {
     color: #FFFFFF;
     background-color: #82B3D3;
+    display: inline-block;
+    box-sizing: border-box;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
     text-align: center;
     width: 160px;
-    height: 48px;
     border-radius: 4px;
-    padding: 5px 10px;
+    padding: 14px;
 }
 
 .button-catalog-reset {
     color: #FFFFFF;
     background-color: transparent;
+    display: inline-block;
+    box-sizing: border-box;
     font-family: inherit;
     font-size: 16px;
     line-height: 20px;
@@ -564,9 +579,8 @@ li.footer-social-item {
     text-align: center;
     border-bottom-style: none;
     width: 160px;
-    height: 48px;
     border-radius: 4px;
-    padding: 5px 10px;
+    padding: 14px;
 }
 
 .hotels-search-results {
@@ -601,13 +615,12 @@ li.footer-social-item {
 }
 
 .card-view-item {
-    display: block;
+    display: inline-block;
     box-sizing: border-box;
     width: 48px;
     height: 48px;
     border: #E5E5E5 solid 2px;
     margin-right: 8px;
-    padding: 10px 10px;
     border-radius: 4px;
 }
 
@@ -615,15 +628,12 @@ li.footer-social-item {
     border: #000000 solid 2px;
 }
 
-.card-view span {
-    padding: 0;
-    margin: 0;
-}
-
 .card-view a {
-    display: block;
-    text-align: center;
-    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 15px 14px;
 }
 
 .data-item-header {
@@ -712,6 +722,7 @@ li.footer-social-item {
 
 .catalog-item-description a {
     box-sizing: border-box;
+    display: inline-block;
     color: #FFFFFF;
     font-size: 16px;
     line-height: 20px;
@@ -720,19 +731,19 @@ li.footer-social-item {
     text-decoration-line: none;
     text-transform: uppercase;
     width: 140px;
-    height: 37px;
     border-radius: 4px;
+    padding: 9px;
 }
 
 a.button.card-main {
     margin: 0 20px 16px 20px;
-    padding: 8px 16px 8px 16px;
+    padding: 9px;
 }
 
 a.button.card-additional,
 a.button.card-checked {
     margin: 0 20px 16px 0;
-    padding: 8px 16px 8px 16px;
+    padding: 9px;
 }
 
 
@@ -752,10 +763,11 @@ img.first-star {
 }
 
 .catalog-item-description p {
+    box-sizing: border-box;
+    display: flex;
     margin: 0 20px 20px 20px;
-    text-align: center;
-    padding-top: 9px;
-    padding-bottom: 8px;
+    justify-content: center;
+    padding: 9px;
     border-radius: 4px;
 
 }
@@ -798,8 +810,7 @@ img.first-star {
     text-align: center;
     align-items: center;
     max-width: 400px;
-    height: 60px;
-    margin: 0 72px;
+    margin: 0 0 0 73px;
     padding: 0;
     list-style: none;
 }
@@ -807,34 +818,35 @@ img.first-star {
 .pagination-item {
     background-color: #82B3D3;
     box-sizing: border-box;
-    width: 60px;
-    height: 60px;
     margin-right: 8px;
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
     border-radius: 4px;
-    padding-top: 12px;
+   
 }
 
 .pagination-current {
     background-color: #F2F2F2;
 }
 
-.pagination-current a {
-    color: #000000;
-}
-
 .pagination-item:nth-last-child(1) {
     margin-right: 0;
 }
 
-.pagination-link {
+a.pagination-link {
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 60px;
     color: #FFFFFF;
-    padding: 10px;
+    padding: 12px 20px;
 }
 
+.pagination-current a {
+    color: #000000;
+}
 
 .page-number {
     display: flex;
@@ -867,6 +879,7 @@ label.block-text-size {
 
 .subscribe-catalog {
     text-align: center;
+    box-sizing: border-box;
     border-style: none;
     padding: 90px 20px 60px 20px;
     margin: 0;
@@ -884,53 +897,18 @@ label.block-text-size {
 .subscribe-catalog input {
     border-style: none;
     width: 600px;
-    height: 60px;
     background: #F2F2F2;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
+    padding: 12px;
 }
 
 .subscribe-catalog button {
     width: 200px;
-    height: 60px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
+    padding: 12px;
 }
-
-
-/* .subscribe-catalog {
-    text-align: center;
-    width: 1200px;
-}
-
-.subscribe-header {
-    color: #000000;
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0;
-    padding-top: 90px;
-    padding-bottom: 30px;
-}
-
-.subscribe-catalog p {
-    padding: 0 85px 45px;
-}
-
-.subscribe-catalog-input {
-    margin-bottom: 90px;
-    width: 600px;
-    height: 60px;
-    background: #F2F2F2;
-    border-style: none;
-}
-
-.subscribe-form button {
-    margin-bottom: 90px;
-    width: 200px;
-    height: 60px;
-} */
 
 .visually-hidden {
     position: absolute;
