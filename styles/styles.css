@@ -471,7 +471,6 @@ label.control {
     list-style-type: none;
     width: 47px;
     height: 40px;
-    /* padding: 5px; */
 }
 
 .social-link a {
@@ -743,6 +742,8 @@ label.control {
     grid-template-columns: 140px 140px;
     grid-template-rows: 211px auto auto auto auto;
     gap: 16px 20px;
+    align-self: center;
+    justify-self: center;
 }
 
 .catalog-item-img {
