@@ -52,7 +52,8 @@ img.logo {
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
-    margin: 0 auto;
+    margin: 0;
+    padding-left: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -76,10 +77,11 @@ img.logo {
 .navigation-user {
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin: 0;
     padding: 0;
+    padding-left: 90px;
     list-style: none;
     min-width: 265px;
 }
@@ -88,7 +90,8 @@ img.logo {
     min-width: 18px;
     min-height: 18px;
     display: block;
-    padding: 20px 17px;
+    margin-left: 30px;
+    /* padding: 20px 17px; */
 }
 
 .navigation-link,
@@ -112,6 +115,7 @@ img.logo {
     border-radius: 4px;
     min-width: 160px;
     padding: 9px 10px 8px;
+    margin-left: 10px;
 }
 
 .favorites-header {
@@ -161,6 +165,7 @@ img.logo {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    margin: 0;
 }
 
 label.control {
@@ -186,12 +191,12 @@ label.control {
 
 .logo-welcome-img {
     padding-top: 51px;
-    padding-bottom: 25px;
+    padding-bottom: 18px;
 }
 
 .background-index-decoration-img {
     display: block;
-    margin-bottom: 63px;
+    margin-bottom: 65px;
     padding: 0;
 }
 
@@ -241,12 +246,15 @@ label.control {
 
 .background-basic h3 {
     text-align: center;
-    margin-bottom: 30px;
+    margin: 0;
+    padding: 30px 25px 10px 20px;
 }
 
 .background-basic-2 h3 {
-    text-align: center;
+    padding: 0 30px;
     margin-bottom: 30px;
+    /* text-align: center;
+    margin-bottom: 30px; */
 }
 
 .background-basic p {
@@ -270,27 +278,39 @@ label.control {
 }
 
 .reasons-item {
+    box-sizing: border-box;
     display: flex;
+    align-items: center;
     margin: 0;
     padding: 0;
 }
 
 .reasons-item li {
     box-sizing: border-box;
-    padding: 80px 20px;
+    display: block;
+    padding: 80px 20px 50px;
     width: 400px;
 }
 
 .reasons-item img {
-    margin-bottom: 30px;
+    margin: 0;
+    padding-bottom: 25px;
 }
 
 .reasons-item h3 {
-    margin-bottom: 30px;
+    margin: 0;
+    padding-bottom: 30px;
 }
 
 .reasons-item p {
-    margin-bottom: 30px;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.without-icon li {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 105px 20px 70px;
 }
 
 .reasons h2,
@@ -333,11 +353,12 @@ label.control {
     align-items: center;
     width: 1200px;
     text-align: center;
-    padding: 90px 20px;
+    padding: 90px 20px 60px;
     margin: 0;
 }
 
 .search-hotel h2 {
+    margin: 0;
     margin-bottom: 30px;
 }
 
@@ -357,6 +378,7 @@ label.control {
     width: 574px;
     padding: 12px;
     text-align: center;
+    margin-top: 25px;
     margin-bottom: 30px;
 }
 
@@ -369,7 +391,7 @@ label.control {
     box-sizing: border-box;
     text-align: center;
     border-style: none;
-    padding: 90px 20px 60px 20px;
+    padding: 94px 20px 64px;
     margin: 0;
 }
 
@@ -378,8 +400,17 @@ label.control {
     margin-bottom: 30px;
 }
 
+.subscribe h2 {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
 .subscribe p {
-    margin-bottom: 30px;
+    margin: 0;
+    padding-bottom: 45px;
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
@@ -387,6 +418,7 @@ label.control {
 }
 
 .subscribe-form {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -402,14 +434,14 @@ label.control {
     background: #F2F2F2;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    padding: 12px;
+    padding: 12px 0;
 }
 
 .subscribe button {
     width: 200px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-    padding: 12px;
+    padding: 12px 0;
 }
 
 .page-footer-container {
@@ -419,9 +451,9 @@ label.control {
     box-sizing: border-box;
     justify-content: space-between;
     align-items: center;
-    width: 1200px;
-    margin: 0;
-    padding: 40px 70px 30px;
+    width: 1060px;
+    margin: 0 auto;
+    padding: 40px 0 30px;
 }
 
 .footer-social-list {
@@ -429,7 +461,7 @@ label.control {
     flex-wrap: wrap;
     max-width: 190px;
     margin: 0 auto;
-    padding: 0;
+    padding: 5px 10px;
 }
 
 .footer-social-item {
@@ -439,7 +471,6 @@ label.control {
     list-style-type: none;
     width: 47px;
     height: 40px;
-    padding: 5px;
 }
 
 .social-link a {
@@ -481,7 +512,7 @@ label.control {
     background-image: url("../images/catalog/background-catalog.jpg");
     background-size: cover;
     margin: 0;
-    padding: 35px 70px 70px 70px;
+    padding: 35px 70px 50px 70px;
 }
 
 .catalog-hotels-search-header {
@@ -616,7 +647,7 @@ label.control {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    padding: 50px 71px 56px 72px;
+    padding: 55px 63px 75px 72px;
 }
 
 .hotels-search-results-header {
@@ -676,9 +707,10 @@ label.control {
     width: 290px;
     height: 49px;
     border: #E5E5E5 solid 2px;
-    padding-left: 20px;
+    padding-left: 15px;
     padding-right: 20px;
     border-radius: 4px;
+    margin-left: 115px;
 }
 
 
@@ -698,14 +730,127 @@ label.control {
 }
 
 .catalog-list {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 340px 340px 340px;
+    grid-template-rows: min-content;
+    gap: 40px 18px;
     margin: 0;
     padding: 0;
+    padding-bottom: 82px;
 }
 
 .catalog-item {
+    display: grid;
+    grid-template-columns: 140px 140px;
+    grid-template-rows: 211px auto auto auto auto;
+    gap: 16px 20px;
+    align-self: center;
+    justify-self: center;
+}
+
+.catalog-item-img {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    object-fit: contain;
+}
+
+.catalog-hotel-header {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.catalog-hotel-type {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.catalog-hotel-price {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+a.button.card-main {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    background-color: #756157;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    align-content: center;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    align-self: center;
+    justify-self: center;
+    padding: 9px 25px;
+}
+
+a.button.card-additional {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    background-color: #82B3D3;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    align-content: center;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    align-self: center;
+    justify-self: center;
+    padding: 9px 20px;
+}
+
+a.button.card-checked {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    background-color: #7DB54F;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    align-content: center;
+    text-decoration-line: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    align-self: center;
+    justify-self: center;
+    padding: 9px 18px;
+}
+
+.catalog-item-stars {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    align-self: center;
+    justify-self: start;
+}
+
+.card-rating-text-size {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    align-self: center;
+    justify-self: center;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 9px 22px 9px 23px;
+    margin: 0;
+}
+
+/* Сетки каталога гостиниц на флексах */
+/* .catalog-item {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -726,7 +871,6 @@ label.control {
     margin: 0 auto;
     padding-bottom: 16px;
 }
-
 .catalog-item h3 {
     min-width: 300px;
     margin: 0;
@@ -780,7 +924,7 @@ a.button.card-checked {
     display: flex;
     min-width: 140px;
     margin-right: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 16px; 
     padding: 10px 0;
 }
 
@@ -788,7 +932,7 @@ a.button.card-checked {
     margin: 0;
     margin-right: 6px;
     padding: 0;
-}
+}  
 
 .card-main {
     background-color: #756157;
@@ -814,7 +958,7 @@ p.card-rating-text-size {
     margin: 0;
     margin-bottom: 16px;
     padding: 9px;
-}
+} */
 
 .pagination-container {
     box-sizing: border-box;
@@ -825,7 +969,7 @@ p.card-rating-text-size {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    padding: 30px 72px 25px 0;
+    padding: 30px 0 25px 0;
 }
 
 .pagination {
@@ -880,7 +1024,7 @@ a.pagination-link {
     justify-content: flex-end;
     min-width: 386px;
     height: 49px;
-    margin: 0 72px 0 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -906,21 +1050,27 @@ label.block-text-size {
     text-align: center;
     box-sizing: border-box;
     border-style: none;
-    padding: 94px 20px 60px 20px;
+    padding: 94px 20px 67px 20px;
     margin: 0;
 }
 
 .subscribe-catalog h2 {
     text-transform: uppercase;
-    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 30px;
 }
 
 .subscribe-catalog p {
-    margin-bottom: 30px;
+    margin: 0;
+    padding-bottom: 45px;
 }
 
 .subscribe-catalog input {
     border-style: none;
+    box-sizing: border-box;
     width: 600px;
     background: #F2F2F2;
     border-top-left-radius: 4px;
