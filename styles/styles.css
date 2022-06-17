@@ -512,7 +512,7 @@ label.control {
     background-image: url("../images/catalog/background-catalog.jpg");
     background-size: cover;
     margin: 0;
-    padding: 35px 70px 70px 70px;
+    padding: 35px 70px 50px 70px;
 }
 
 .catalog-hotels-search-header {
@@ -647,7 +647,7 @@ label.control {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    padding: 50px 71px 56px 72px;
+    padding: 55px 63px 75px 72px;
 }
 
 .hotels-search-results-header {
@@ -707,9 +707,10 @@ label.control {
     width: 290px;
     height: 49px;
     border: #E5E5E5 solid 2px;
-    padding-left: 20px;
+    padding-left: 15px;
     padding-right: 20px;
     border-radius: 4px;
+    margin-left: 115px;
 }
 
 
@@ -731,10 +732,11 @@ label.control {
 .catalog-list {
     display: grid;
     grid-template-columns: 340px 340px 340px;
-    grid-template-rows: 438px;
+    grid-template-rows: min-content;
     gap: 40px 18px;
     margin: 0;
     padding: 0;
+    padding-bottom: 82px;
 }
 
 .catalog-item {
@@ -749,6 +751,7 @@ label.control {
 .catalog-item-img {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
+    object-fit: contain;
 }
 
 .catalog-hotel-header {
@@ -846,6 +849,7 @@ a.button.card-checked {
     margin: 0;
 }
 
+/* Сетки каталога гостиниц на флексах */
 /* .catalog-item {
     display: flex;
     flex-direction: row;
@@ -965,7 +969,7 @@ p.card-rating-text-size {
     justify-content: space-between;
     align-items: center;
     margin: 0;
-    padding: 30px 72px 25px 0;
+    padding: 30px 0 25px 0;
 }
 
 .pagination {
@@ -1020,7 +1024,7 @@ a.pagination-link {
     justify-content: flex-end;
     min-width: 386px;
     height: 49px;
-    margin: 0 72px 0 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -1046,21 +1050,27 @@ label.block-text-size {
     text-align: center;
     box-sizing: border-box;
     border-style: none;
-    padding: 94px 20px 60px 20px;
+    padding: 94px 20px 67px 20px;
     margin: 0;
 }
 
 .subscribe-catalog h2 {
     text-transform: uppercase;
-    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 30px;
 }
 
 .subscribe-catalog p {
-    margin-bottom: 30px;
+    margin: 0;
+    padding-bottom: 45px;
 }
 
 .subscribe-catalog input {
     border-style: none;
+    box-sizing: border-box;
     width: 600px;
     background: #F2F2F2;
     border-top-left-radius: 4px;
