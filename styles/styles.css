@@ -117,6 +117,15 @@ img.logo {
     margin-left: 33px;
 }
 
+.navigation-user-item:nth-child(3) a:hover {
+    background-color: #615048;
+}
+
+.navigation-user-item:nth-child(3) a:visited {
+    background-color: #756157;
+    color: #FFFFFF;
+}
+
 .favorites-header {
     color: #000000;
     font-weight: 400;
@@ -139,11 +148,17 @@ span.favorites-header {
     transform: translateY(-5px) translateX(13px);
     position: absolute;
     z-index: 1;
-    background-color: #6C9E42;
+    background-color: #7DB54F;
     width: 20px;
     height: 20px;
     border-radius: 50px;
     color: #FFFFFF;
+}
+
+p.favorite-counter {
+    position: relative;
+    top: -6px;
+    left: 0px;
 }
 
 .button-main {
@@ -403,6 +418,10 @@ label.control {
     margin-bottom: 30px;
 }
 
+.search-hotel a:hover {
+    background-color: #615048;
+}
+
 .subscribe {
     background-image: url("../images/main/background-subscribe.jpg");
     background-repeat: no-repeat;
@@ -465,6 +484,10 @@ label.control {
     padding: 12px 0;
 }
 
+.subscribe button:hover {
+    background-color: #68A2CA;
+}
+
 .page-footer-container {
     display: flex;
     flex-direction: row;
@@ -494,6 +517,10 @@ label.control {
     height: 40px;
 }
 
+/* img.social-icon:hover {
+     #68A2CA;
+} */
+
 .social-link a {
     align-items: center;
     justify-content: center;
@@ -517,6 +544,10 @@ label.control {
     font-weight: 400;
 }
 
+.footer-contacts a:hover {
+    color: #756157;
+}
+
 .footer-about-developers {
     display: flex;
     flex-wrap: wrap;
@@ -527,6 +558,9 @@ label.control {
     padding: 8px 0 5px 7px;
 }
 
+/* .footer-about-developers:hover {
+    color: #756157;
+} */
 
 .catalog-hotels-search {
     color: #FFFFFF;
@@ -644,6 +678,10 @@ label.control {
     padding: 14px;
 }
 
+.button-catalog-additional:hover {
+    background-color: #68A2CA;
+}
+
 .button-catalog-reset {
     color: #FFFFFF;
     background-color: transparent;
@@ -702,8 +740,12 @@ label.control {
     border-radius: 4px;
 }
 
-.card-view-item:nth-child(1) {
+.card-view-item:hover {
     border: #000000 solid 2px;
+}
+
+.card-view-item:focus {
+    border: #68A2CA solid 2px;
 }
 
 .card-view a {
@@ -732,6 +774,18 @@ label.control {
     padding-right: 20px;
     border-radius: 4px;
     margin-left: 115px;
+}
+
+.price-filter:hover {
+    border: #68A2CA solid 2px;
+}
+
+.price-filter:focus {
+    border: #3F5E72 solid 2px;
+}
+
+.price-filter:active {
+    border: #68A2CA solid 2px;
 }
 
 
@@ -815,6 +869,14 @@ a.button.card-main {
     padding: 9px 25px;
 }
 
+a.button.card-main:hover {
+    background-color: #615048;
+}
+
+a.button.card-main:focus {
+    background-color: #615048;
+}
+
 a.button.card-additional {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
@@ -832,6 +894,15 @@ a.button.card-additional {
     padding: 9px 20px;
 }
 
+a.button.card-additional:hover {
+    background-color: #68A2CA
+}
+
+a.button.card-additional:focus {
+    background-color: #68A2CA
+}
+
+
 a.button.card-checked {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
@@ -847,6 +918,14 @@ a.button.card-checked {
     align-self: center;
     justify-self: center;
     padding: 9px 18px;
+}
+
+a.button.card-checked:hover {
+    background-color: #6C9E42;
+}
+
+a.button.card-checked:focus {
+    background-color: #6C9E42;
 }
 
 .catalog-item-stars {
@@ -869,117 +948,6 @@ a.button.card-checked {
     padding: 9px 22px 9px 23px;
     margin: 0;
 }
-
-/* Сетки каталога гостиниц на флексах */
-/* .catalog-item {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    align-items: flex-start;
-    width: 340px;
-    height: 438px;
-    margin-right: 18px;
-    list-style: none;
-    padding: 20px;
-}
-
-.catalog-item:nth-of-type(3) {
-    margin-right: 0;
-}
-
-.catalog-item img {
-    margin: 0 auto;
-    padding-bottom: 16px;
-}
-.catalog-item h3 {
-    min-width: 300px;
-    margin: 0;
-    padding-bottom: 16px;
-    text-align: left;
-}
-
-.catalog-item p {
-    box-sizing: border-box;
-    min-width: 140px;
-    margin: 0;
-    padding-bottom: 16px;
-    padding-right: 20px;
-}
-
-.catalog-item p:nth-child(1) {
-    margin-right: 20px;
-}
-
-.catalog-item a {
-    box-sizing: border-box;
-    color: #FFFFFF;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    text-align: center;
-    display: inline-block;
-    text-decoration-line: none;
-    text-transform: uppercase;
-    min-width: 140px;
-    height: 37px;
-    border-radius: 4px;
-    margin: 0;
-    padding: 9px;
-}
-
-a.button.card-main {
-    margin: 0;
-    margin-right: 20px;
-    margin-bottom: 16px;
-}
-
-a.button.card-additional,
-a.button.card-checked {
-    margin: 0;
-    margin-bottom: 16px;
-    padding: 9px;
-}
-
-.catalog-item-stars {
-    display: flex;
-    min-width: 140px;
-    margin-right: 20px;
-    margin-bottom: 16px; 
-    padding: 10px 0;
-}
-
-.catalog-item-stars img {
-    margin: 0;
-    margin-right: 6px;
-    padding: 0;
-}  
-
-.card-main {
-    background-color: #756157;
-}
-
-.card-additional {
-    background-color: #82B3D3;
-}
-
-.card-checked {
-    background-color: #7DB54F;
-}
-
-p.card-rating-text-size {
-    background-color: #F2F2F2;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 400;
-    text-align: center;
-    min-width: 140px;
-    margin: 0;
-    margin-bottom: 16px;
-    padding: 9px;
-} */
 
 .pagination-container {
     box-sizing: border-box;
@@ -1016,7 +984,16 @@ p.card-rating-text-size {
 
 }
 
+.pagination-item:hover {
+    background-color: #68A2CA;
+    /* border: #82B3D3 1px solid; */
+}
+
 .pagination-current {
+    background-color: #F2F2F2;
+}
+
+.pagination-current:hover {
     background-color: #F2F2F2;
 }
 
@@ -1065,6 +1042,11 @@ label.block-text-size {
     height: 49px;
     border: #E5E5E5 solid 2px;
     border-radius: 4px;
+    padding-left: 15px;
+}
+
+.items-on-page:hover {
+    border: #68A2CA solid 2px;
 }
 
 .subscribe-catalog {
@@ -1097,6 +1079,10 @@ label.block-text-size {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     padding: 12px;
+}
+
+.subscribe-catalog button:hover {
+    background-color: #68A2CA;
 }
 
 .subscribe-catalog button {
