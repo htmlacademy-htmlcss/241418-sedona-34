@@ -70,7 +70,7 @@ body {
 
 .navigation-link {
     display: block;
-    padding: 21px 17px 18px;
+    margin: 21px 17px 18px;
 }
 
 .navigation-item {
@@ -112,7 +112,6 @@ body {
     right: 17px;
     bottom: 0;
     background-color: #756257;
-    text-decoration-line: underline;
     content: "";
 }
 
