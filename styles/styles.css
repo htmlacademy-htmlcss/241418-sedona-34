@@ -275,8 +275,9 @@ label.control {
 }
 
 .reasons p {
-    padding: 0 30px;
-    margin-bottom: 90px;
+    margin: 0;
+    padding: 0 20px;
+    margin-bottom: 30px;
 }
 
 .reasons-sedona-img,
@@ -291,6 +292,7 @@ label.control {
     background-color: #82B3D3;
     color: #FFFFFF;
     margin: 0;
+    margin-top: 90px;
     padding: 0;
     text-align: center;
 }
@@ -317,14 +319,6 @@ label.control {
     margin: 0;
 }
 
-.background-basic p {
-    margin-bottom: 30px;
-}
-
-.background-basic-2 p {
-    margin-bottom: 30px;
-}
-
 .background-basic li:nth-child(1) {
     width: 400px;
 }
@@ -340,7 +334,6 @@ label.control {
 .reasons-item {
     box-sizing: border-box;
     display: flex;
-    align-items: center;
     margin: 0;
     padding: 0;
 }
@@ -348,13 +341,14 @@ label.control {
 .reasons-item li {
     box-sizing: border-box;
     display: block;
-    padding: 80px 20px 50px;
+    padding: 80px 20px 47px;
     width: 400px;
 }
 
-.reasons-item img {
-    margin: 0;
-    padding-bottom: 25px;
+.reasons-icon {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 .reasons-item h3 {
@@ -364,13 +358,13 @@ label.control {
 
 .reasons-item p {
     margin: 0;
-    padding-bottom: 29px;
+    margin-bottom: 30px;
 }
 
 .without-icon li {
     box-sizing: border-box;
     margin: 0;
-    padding: 105px 20px 70px;
+    padding: 103px 20px 72px;
 }
 
 .reasons h2,
@@ -388,7 +382,6 @@ label.control {
     font-size: 24px;
     line-height: 28px;
 }
-
 
 .background-second-1 {
     background-color: rgba(131, 179, 211, 0.12);
@@ -413,7 +406,7 @@ label.control {
     align-items: center;
     width: 1200px;
     text-align: center;
-    padding: 93px 20px 62px;
+    padding: 90px 20px 62px;
     margin: 0;
 }
 
@@ -555,7 +548,7 @@ label.control {
     align-items: center;
     width: 1200px;
     margin: 0 auto;
-    padding: 40px 70px 30px 70px;
+    padding: 42px 70px 28px 70px;
     background-color: #FFFFFF;
     box-shadow: 0 10px 5px 5px #e1e1e1;
 }
@@ -1206,7 +1199,7 @@ label.block-text-size {
     text-align: center;
     box-sizing: border-box;
     border-style: none;
-    padding: 94px 20px 67px 20px;
+    padding: 97px 20px 63px 20px;
     margin: 0;
 }
 
@@ -1216,7 +1209,7 @@ label.block-text-size {
     line-height: 36px;
     font-weight: 700;
     margin: 0;
-    padding-bottom: 30px;
+    padding-bottom: 28px;
 }
 
 .subscribe-catalog p {
