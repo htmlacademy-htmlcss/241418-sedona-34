@@ -70,7 +70,8 @@ body {
 
 .navigation-link {
     display: block;
-    margin: 21px 17px 18px;
+    margin: 21px 17px 0;
+    padding-bottom: 18px;
 }
 
 .navigation-item {
@@ -276,7 +277,7 @@ label.control {
 
 .reasons p {
     margin: 0;
-    padding: 0 20px;
+    padding: 0;
     margin-bottom: 30px;
 }
 
@@ -347,13 +348,12 @@ label.control {
 
 .reasons-icon {
     display: block;
-    margin: 0 auto;
-    padding-bottom: 30px;
+    margin: 0 auto 30px;
 }
 
 .reasons-item h3 {
     margin: 0;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .reasons-item p {
@@ -498,13 +498,14 @@ label.control {
 }
 
 .subscribe-input {
+    box-sizing: border-box;
     border-style: none;
     font-family: inherit;
     width: 600px;
     background: #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    padding: 25px 0 18px;
+    padding: 25px 22px 18px;
 }
 
 .subscribe button {
@@ -530,7 +531,7 @@ label.control {
 ::placeholder {
     margin: 0;
     display: inline-block;
-    padding-left: 22px;
+    padding: 0;
     font-family: inherit;
     font-weight: 400;
     font-size: 18px;
@@ -558,7 +559,7 @@ label.control {
     flex-wrap: wrap;
     max-width: 190px;
     margin: 0 auto;
-    padding: 5px 0px 5px 10px;
+    padding: 5px 0px 5px 0;
 }
 
 .footer-social-item {
@@ -570,6 +571,8 @@ label.control {
 .social-link {
     position: relative;
     display: inline-block;
+    width: 47px;
+    height: 40px;
 }
 
 .social-icon {
@@ -598,7 +601,7 @@ label.control {
     box-sizing: border-box;
     justify-content: center;
     margin: 0;
-    padding: 5px 0;
+    padding: 5px 0 5px 10px;
 }
 
 .footer-contacts a {
@@ -652,7 +655,7 @@ label.control {
     line-height: 78px;
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: 7px;
+    margin-bottom: 3px;
     padding: 0;
 }
 
@@ -663,9 +666,39 @@ label.control {
     min-width: 300px;
     justify-content: flex-start;
     align-items: center;
-    margin: 0 0 40px 0;
+    margin: 0 0 36px 0;
     padding: 0;
 
+}
+
+.breadcrumbs-link {
+    margin: auto;
+    padding: 0;
+}
+
+.breadcrumbs-link-icon {
+    margin: 0;
+    margin-left: 2px;
+    padding: 0;
+    display: block;
+}
+
+.breadcrumbs-link-icon:hover {
+    opacity: 0.6;
+}
+
+.breadcrumbs-item {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+    content: url("../images/catalog/breadcrumbs-icon-arrow.svg");
+    padding: 0;
+    display: block;
+    padding-bottom: 4px;
+    margin-left: 10px;
 }
 
 .breadcrumbs-item p {
@@ -675,33 +708,6 @@ label.control {
     font-weight: 400;
     margin: 0;
     padding: 0;
-    padding-left: 10px;
-}
-
-.breadcrumbs-item {
-    list-style: none;
-    position: relative;
-    margin: 0 10px 0 0;
-}
-
-
-.breadcrumbs-link {
-    display: flex;
-    position: relative;
-    margin: 0 10px 0 0;
-}
-
-.breadcrumbs-link:hover {
-    opacity: 0.6;
-}
-
-.breadcrumbs-link-icon {
-    position: absolute;
-    top: 0;
-    right: -12px;
-    bottom: 0;
-    left: 3px;
-    margin: auto;
 }
 
 .hotels-search-filter {
@@ -812,6 +818,7 @@ label.control {
     width: 160px;
     border-radius: 4px;
     padding: 14px;
+    border: 3px solid transparent;
 }
 
 .button-catalog-reset:hover {
@@ -819,8 +826,6 @@ label.control {
 }
 
 .button-catalog-reset:focus {
-    display: inline-block;
-    box-sizing: border-box;
     border: 3px solid #83B3D3;
 }
 
@@ -862,25 +867,26 @@ label.control {
     box-sizing: border-box;
     width: 48px;
     height: 48px;
-    border: #E5E5E5 solid 2px;
     margin-right: 8px;
     border-radius: 4px;
 }
 
-.card-view-item:hover {
-    border: #000000 solid 2px;
-}
-
-.card-view-item:focus {
-    border: #68A2CA solid 2px;
-}
-
 .card-view a {
     display: flex;
+    border: #E5E5E5 solid 2px;
+    border-radius: 4px;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     padding: 15px 14px;
+}
+
+.card-view a:hover {
+    border: #000000 solid 2px;
+}
+
+.card-view a:focus {
+    border: #68A2CA solid 2px;
 }
 
 .data-item-header {
@@ -1118,47 +1124,52 @@ a.button.card-checked:disabled {
 }
 
 .pagination-item {
-    background-color: #82B3D3;
     box-sizing: border-box;
     margin-right: 8px;
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
-    border-radius: 4px;
 
 }
 
-.pagination-item:hover {
-    box-sizing: border-box;
-    background-color: #68A2CA;
-    border: #82B3D3 1px solid;
-    outline: none;
-}
-
-.pagination-current {
+.pagination-current a {
     background-color: #F2F2F2;
+    border: #F2F2F2 1px solid;
+    color: #000000;
 }
 
-.pagination-current:hover {
+.pagination-current a:hover {
     background-color: #F2F2F2;
+    border: #F2F2F2 1px solid;
 }
 
-.pagination-item:nth-last-child(1) {
-    margin-right: 0;
-}
-
-a.pagination-link {
+.pagination-link {
+    background-color: #82B3D3;
     text-decoration: none;
     display: flex;
     justify-content: center;
     box-sizing: border-box;
     width: 60px;
     color: #FFFFFF;
-    padding: 12px 20px;
+    padding: 11px 20px;
+    border-radius: 4px;
+    border: #82B3D3 1px solid;
 }
 
-.pagination-current a {
-    color: #000000;
+.pagination-link:hover {
+    box-sizing: border-box;
+    background-color: #68A2CA;
+    border: #82B3D3 1px solid;
+}
+
+.pagination-link:focus {
+    box-sizing: border-box;
+    background-color: #68A2CA;
+    border: #82B3D3 1px solid;
+}
+
+.pagination-item:nth-last-child(1) {
+    margin-right: 0;
 }
 
 .page-number {
@@ -1224,7 +1235,7 @@ label.block-text-size {
     background: #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    padding: 12px;
+    padding: 25px 22px 18px;
 }
 
 .subscribe-catalog button:hover {
