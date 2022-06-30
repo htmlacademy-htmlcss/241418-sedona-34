@@ -370,7 +370,8 @@ label.control {
 }
 
 .reasons h2,
-.search-title {
+.search-title,
+.modal-title {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -1497,4 +1498,205 @@ label.block-text-size {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+.modal-search-hotels {
+    width: 715px;
+    border-radius: 30px;
+    display: flex;
+    padding: 66px 0px;
+}
+
+.modal-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0 70px;
+}
+
+.modal-close-button {
+    padding: 0;
+    margin-left: auto;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    border: none;
+    background-image: url("../images/modal/modal-close-icon.svg");
+    background-repeat: no-repeat;
+    background-color: F2F2F2;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* .modal-container-close {
+    display: none;
+} */
+
+.modal-form-data {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 575px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    appearance: none;
+    border: none;
+}
+
+.modal-form {
+    display: flex;
+}
+
+.modal-title {
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+.modal-form-data-item {
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+.calendar-form-field {
+    width: 420px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #F2F2F2;
+    border: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-image: url("../images/modal/calendar-icon.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    appearance: none;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.checkin-alert {
+    color: #FF5757;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-left: 154px;
+    margin-bottom: 10px;
+}
+
+.checkout-alert {
+    color: #333333;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-left: 154px;
+    margin-bottom: 10px;
+}
+
+.checkin-day,
+.checkout-day {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number-of-people {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+}
+
+.people-form-buttons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color:#F2F2F2;
+    border: none;
+    width: 133px;
+    border-radius: 4px;
+    margin-right: auto;
+    padding: 0 19px;
+}
+
+.people-form-del {
+    appearance: none;
+    border: none;
+    width: 13px;
+    height: 13px;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/modal/minus-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 7px;
+}
+
+.people-form-add {
+    appearance: none;
+    border: none;
+    width: 13px;
+    height: 13px;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/modal/plus-icon.svg");
+    background-repeat: no-repeat;
+    background-position: auto;
+}
+
+
+.total-people {
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    padding: 15px 10px;
+}
+
+.button-modal-additional {
+    width: 575px;
+    font-family: inherit;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #82B3D3;
+    text-transform: uppercase;
+    text-align: center;
+    border-style: none;
+    border-radius: 10px;
+    padding: 15px;
 }
