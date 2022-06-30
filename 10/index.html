@@ -234,33 +234,40 @@
       <section class="modal-content">
         <h2 class="modal-title">поиск гостиницы в седоне</h2>
         <button class="modal-close-button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
         <form class="modal-form" action="#" method="post">
           <fieldset class="modal-form-data">
-            <label class="checkin-day"><span class="modal-form-data-item">Дата заезда:</span>
-              <input class="calendar-form-field" type="date" name="checkin-day" value="27 апреля 2020">
-              <span class="checkin-alert">Мы не можем отправить вас в прошлое.</span>
+            <label class="checkin-day"><span class="modal-form-data-item">Дата Заезда:</span>
+              <input class="calendar-form-field" type="date" name="checkin-day" value="">
             </label>
-            <label class="checkout-day"><span class="modal-form-data-item">Дата заезда:</span>
-              <input class="calendar-form-field" type="date" name="checkout" value="1 сентября 2021">
-              <span class="checkout-alert">На эти даты есть свободные номера. Пока есть.</span>
+            <span class="checkin-alert">Мы не можем отправить вас в прошлое.</span>
+          </fieldset>
+          <fieldset class="modal-form-data">
+            <label class="checkout-day"><span class="modal-form-data-item">Дата Выезда:</span>
+              <input class="calendar-form-field" type="date" name="checkout" value="">
             </label>
+            <span class="checkout-alert">На эти даты есть свободные номера. Пока есть.</span>
+          </fieldset>
+          <fieldset class="modal-form-adults">
             <label class="number-of-people"><span class="modal-form-data-item">Взрослые:</span>
-              <div class="people-form-buttons">
-                <button class="people-form-del" type="submit"></button>
-                <span class="total-people">2</span>
-                <button class="people-form-add" type="submit"></button>
-              </div>
+              <span class="people-form-buttons">
+                <button class="people-form-del" type="button"></button>
+                <input class="total-people" type="text" name="adult" value="2">
+                <button class="people-form-add" type="button"></button>
+              </span>
             </label>
-            <label class="number-of-people"><span class="modal-form-data-item">Дети:</span>
-              <div class="people-form-buttons">
-                <button class="people-form-del" type="submit"></button>
-                <span class="total-people">1</span>
-                <button class="people-form-add" type="submit"></button>
-              </div>
+          </fieldset>
+          <fieldset class="modal-form-kids">
+            <label class="number-of-people"><span class="modal-form-data-item-kids">Дети:</span>
+              <span class="people-form-buttons">
+                <button class="people-form-del" type="button"></button>
+                <input class="total-people" type="text" name="kids" value="1">
+                <button class="people-form-add" type="button"></button>
+              </span>
             </label>
-            <button class="button-modal-additional" type="submit">найти</button>
+          </fieldset>
+          <button class="button-modal-additional" type="submit">найти</button>
           </fieldset>
         </form>
       </section>
