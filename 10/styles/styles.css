@@ -850,14 +850,15 @@ label.control {
     width: 143px;
 }
 
+.control-price-for-house:nth-child(1) {
+    border-radius: 4px 0px 0px 4px;
+    z-index: 1;
+}
+
 .control-price-for-house:nth-child(2) {
     border-radius: 0px 4px 4px 0px;
     margin-left: -2px;
     z-index: 0;
-}
-
-.control-price-for-house:nth-child(1) {
-    border-radius: 4px 0px 0px 4px;
 }
 
 .control-price-for-house:focus-within {
@@ -1525,7 +1526,7 @@ label.block-text-size {
 .modal-content {
     display: flex;
     flex-wrap: wrap;
-    padding: 63px 68px 64px;
+    padding: 63px 68px 68px;
 
 }
 
@@ -1569,7 +1570,7 @@ label.block-text-size {
     flex-wrap: wrap;
 }
 
-/* .modal-form-data {
+.modal-form-data {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -1580,7 +1581,7 @@ label.block-text-size {
     align-items: center;
     appearance: none;
     border: none;
-} */
+}
 
 
 .modal-title {
@@ -1600,7 +1601,7 @@ label.block-text-size {
 }
 
 .modal-form-data-item-kids {
-    ont-family: inherit;
+    font-family: inherit;
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
@@ -1617,7 +1618,7 @@ label.block-text-size {
     border-radius: 4px;
     background-color: #F2F2F2;
     border: transparent solid 3px;
-    padding: 12px 12px 11px 12px;
+    padding: 15px 18px 8px 18px;
     margin-bottom: 7px;
     background-image: url("../images/modal/calendar-icon.svg");
     background-repeat: no-repeat;
@@ -1657,6 +1658,7 @@ label.block-text-size {
     font-weight: 400;
     margin-left: 156px;
     margin-bottom: 10px;
+    margin-top: 4px;
 }
 
 .checkout-alert {
@@ -1667,35 +1669,21 @@ label.block-text-size {
     font-weight: 400;
     margin-left: 156px;
     margin-bottom: 10px;
+    margin-top: 4px;
 }
 
-/* .checkin-day,
+.checkin-day,
 .checkout-day {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-} */
-
-.modal-form-adults {
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    border: none;
 }
 
 .modal-form-kids {
     margin: 0;
     padding: 0;
     border: none;
-}
-
-.number-of-people {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin: 0;
-    align-items: center;
 }
 
 .people-form-buttons {
@@ -1844,7 +1832,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding: 0;
     margin: 0;
     display: block;
-    bottom: 12px;
+    bottom: -12px;
     left: 110px;
 }
 
@@ -1865,7 +1853,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: block;
     width: 256px;
     position: absolute;
-    bottom: 100%;
+    bottom: 24px;
     left: -5px;
     transform: translateY(195px);
     z-index: 1;
