@@ -40,8 +40,7 @@
           </li>
           <li class="navigation-user-item">
             <a class="navigation-user-link" href="#">
-              <span class="favorites-header">
-                <p class="favorite-counter">12</p>
+              <span class="favorites-header">12
               </span>
               <svg class="favorite-icon" aria-hidden="true" focusable="false" width="19" height="17" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -90,7 +89,7 @@
             <p class="block-text-size">Седона — не аттракцион для<br>туристов, там течёт своя<br>жизнь</p>
           </li>
           <li class="reasons-item-img">
-            <img class="reasons-sedona-img" src="./images/main/reasons-sedona.jpg" width="800" height="384">
+            <img class="reasons-sedona-img" src="./images/main/reasons-sedona.jpg" width="800" height="384" alt="">
           </li>
         </ul>
         <ul class="reasons-item">
@@ -233,42 +232,75 @@
     <div class="modal modal-search-hotels">
       <section class="modal-content">
         <h2 class="modal-title">поиск гостиницы в седоне</h2>
-        <button class="modal-close-button">
+        <button class="modal-close-button"><svg class="modal-close-button-icon" width="13" height="13" viewBox="0 0 13 13" fill="currentcolor"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" />
+          </svg>
           <span class="visually-hidden">Закрыть</span>
         </button>
         <form class="modal-form" action="#" method="post">
           <fieldset class="modal-form-data">
             <label class="checkin-day"><span class="modal-form-data-item">Дата Заезда:</span>
-              <input class="calendar-form-field" type="date" name="checkin-day" value="">
+              <input class="calendar-form-field" type="text" name="checkin-day" value="27 апреля 2020">
             </label>
             <span class="checkin-alert">Мы не можем отправить вас в прошлое.</span>
           </fieldset>
           <fieldset class="modal-form-data">
             <label class="checkout-day"><span class="modal-form-data-item">Дата Выезда:</span>
-              <input class="calendar-form-field" type="date" name="checkout" value="">
+              <input class="calendar-form-field" type="text" name="checkout" value="1 сентября 2021">
             </label>
             <span class="checkout-alert">На эти даты есть свободные номера. Пока есть.</span>
           </fieldset>
           <fieldset class="modal-form-adults">
-            <label class="number-of-people"><span class="modal-form-data-item">Взрослые:</span>
+            <span class="number-of-people"><span class="modal-form-data-item">Взрослые:</span>
               <span class="people-form-buttons">
-                <button class="people-form-del" type="button"></button>
+                <button class="people-form-del" type="button"><svg class="people-form-del-icon" width="13" height="1"
+                    viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 1L13 1V0L0 0Z" fill="currentcolor" />
+                  </svg></button>
                 <input class="total-people" type="text" name="adult" value="2">
-                <button class="people-form-add" type="button"></button>
+                <button class="people-form-add" type="button"><svg class="people-form-add-icon" width="13" height="13"
+                    viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="currentcolor" />
+                  </svg></button>
               </span>
-            </label>
+            </span>
           </fieldset>
+          <span class="modal-tooltip">
+            <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+              <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#a)" fill="#fff">
+                  <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                </g>
+                <defs>
+                  <clipPath id="a">
+                    <path fill="#fff" d="M0 0h1v9H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <span class="tooltip-text" role="tooltip" id="tooltip-label"> Укажите количество детей, которые будут с
+              вами, возраст которых от 6 до 18
+              лет. Дети до 6 лет размещаются бесплатно.</span>
+          </span>
           <fieldset class="modal-form-kids">
-            <label class="number-of-people"><span class="modal-form-data-item-kids">Дети:</span>
+            <span class="number-of-people"><span class="modal-form-data-item-kids">Дети:</span>
               <span class="people-form-buttons">
-                <button class="people-form-del" type="button"></button>
+                <button class="people-form-del" type="button"><svg class="people-form-del-icon" width="13" height="1"
+                    viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 1L13 1V0L0 0Z" fill="currentcolor" />
+                  </svg></button>
                 <input class="total-people" type="text" name="kids" value="1">
-                <button class="people-form-add" type="button"></button>
+                <button class="people-form-add" type="button"><svg class="people-form-add-icon" width="13" height="13"
+                    viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z" fill="currentcolor" />
+                  </svg></button>
               </span>
-            </label>
+            </span>
           </fieldset>
           <button class="button-modal-additional" type="submit">найти</button>
-          </fieldset>
         </form>
       </section>
     </div>
