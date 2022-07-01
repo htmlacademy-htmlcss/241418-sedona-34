@@ -1569,7 +1569,7 @@ label.block-text-size {
     flex-wrap: wrap;
 }
 
-.modal-form-data {
+/* .modal-form-data {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -1580,7 +1580,7 @@ label.block-text-size {
     align-items: center;
     appearance: none;
     border: none;
-}
+} */
 
 
 .modal-title {
@@ -1669,13 +1669,13 @@ label.block-text-size {
     margin-bottom: 10px;
 }
 
-.checkin-day,
+/* .checkin-day,
 .checkout-day {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-}
+} */
 
 .modal-form-adults {
     margin: 0;

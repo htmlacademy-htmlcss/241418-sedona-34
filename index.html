@@ -231,27 +231,27 @@
     <div class="modal modal-search-hotels">
       <section class="modal-content">
         <h2 class="modal-title">поиск гостиницы в седоне</h2>
-        <button class="modal-close-button"><svg class="modal-close-button-icon" width="13" height="13" viewBox="0 0 13 13" fill="currentcolor"
-            xmlns="http://www.w3.org/2000/svg">
+        <button class="modal-close-button"><svg class="modal-close-button-icon" width="13" height="13"
+            viewBox="0 0 13 13" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" />
           </svg>
           <span class="visually-hidden">Закрыть</span>
         </button>
         <form class="modal-form" action="#" method="post">
-          <fieldset class="modal-form-data">
-            <label class="checkin-day"><span class="modal-form-data-item">Дата Заезда:</span>
-              <input class="calendar-form-field" type="text" name="checkin-day" value="27 апреля 2020">
-            </label>
+          <!-- <fieldset class="modal-form-data"> -->
+            <label for="calendar-form-checkin-id" class="checkin-day modal-form-data-item">Дата Заезда:</label>
+            <input class="calendar-form-field" id="calendar-form-checkin-id" type="text" name="checkin-day"
+              value="27 апреля 2020">
             <span class="checkin-alert">Мы не можем отправить вас в прошлое.</span>
-          </fieldset>
-          <fieldset class="modal-form-data">
-            <label class="checkout-day"><span class="modal-form-data-item">Дата Выезда:</span>
-              <input class="calendar-form-field" type="text" name="checkout" value="1 сентября 2021">
-            </label>
+          <!-- </fieldset> -->
+          <!-- <fieldset class="modal-form-data"> -->
+            <label for="calendar-form-checkout-id" class="checkout-day modal-form-data-item">Дата Выезда:</label>
+            <input class="calendar-form-field" id="calendar-form-checkout-id" type="text" name="checkout"
+              value="1 сентября 2021">
             <span class="checkout-alert">На эти даты есть свободные номера. Пока есть.</span>
-          </fieldset>
-          <fieldset class="modal-form-adults">
+          <!-- </fieldset> -->
+          <!-- <fieldset class="modal-form-adults"> -->
             <span class="number-of-people"><span class="modal-form-data-item">Взрослые:</span>
               <span class="people-form-buttons">
                 <button class="people-form-del" type="button"><svg class="people-form-del-icon" width="13" height="1"
@@ -265,7 +265,7 @@
                   </svg></button>
               </span>
             </span>
-          </fieldset>
+          <!-- </fieldset> -->
           <span class="modal-tooltip">
             <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
               <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none"
@@ -284,7 +284,7 @@
               вами, возраст которых от 6 до 18
               лет. Дети до 6 лет размещаются бесплатно.</span>
           </span>
-          <fieldset class="modal-form-kids">
+          <!-- <fieldset class="modal-form-kids"> -->
             <span class="number-of-people"><span class="modal-form-data-item-kids">Дети:</span>
               <span class="people-form-buttons">
                 <button class="people-form-del" type="button"><svg class="people-form-del-icon" width="13" height="1"
@@ -298,7 +298,7 @@
                   </svg></button>
               </span>
             </span>
-          </fieldset>
+          <!-- </fieldset> -->
           <button class="button-modal-additional" type="submit">найти</button>
         </form>
       </section>
