@@ -181,7 +181,7 @@ span.favorites-header {
     height: 20px;
     border-radius: 50px;
     color: #FFFFFF;
-    
+
 }
 
 .button-main {
@@ -1537,11 +1537,11 @@ label.block-text-size {
     height: 53px;
     border-radius: 50%;
     border: none;
-    background-image: url("../images/modal/modal-close-icon.svg");
-    background-repeat: no-repeat;
-    background-color: F2F2F2;
-    background-position: center;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
 }
 
 .modal-close-button:hover {
@@ -1555,14 +1555,13 @@ label.block-text-size {
 }
 
 .modal-close-button:active {
-    background-color: rgb(230, 230, 230);
-    color: rgba(230, 230, 230, 0.3)
+    background-color: #E6E6E6;
+    color: rgba(0, 0, 0, 0.3);
 }
 
-
-.modal-container-close {
+/* .modal-container-close {
     display: none;
-}
+} */
 
 
 .modal-form {
@@ -1830,4 +1829,64 @@ input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
+}
+
+.modal-tooltip {
+    position: relative;
+}
+.tooltip-toggle {
+    position: absolute;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: #83B3D3;
+    padding: 0;
+    margin: 0;
+    display: block;
+    bottom: 12px;
+    left: 110px;
+}
+
+.tooltip-toggle:hover {
+    background-color: #68A2CA;
+}
+
+.tooltip-text {
+    background-color: #333333;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: none;
+    padding: 21px 20px;
+    border-radius: 10px;
+    display: block;
+    width: 256px;
+    position: absolute;
+    bottom: 100%;
+    left: -5px;
+    transform: translateY(195px);
+    z-index: 1;
+    display: none;
+}
+
+.tooltip-text::after {
+    background-image: url("../images/modal/tooltip-top-icon.svg");
+    bottom: 100%;
+    width: 19px;
+    height: 9px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    content: "";
+}
+
+
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus+.tooltip-text {
+    display: block;
 }
