@@ -1435,6 +1435,12 @@ a.button.card-checked:disabled {
     border: #F2F2F2 1px solid;
 }
 
+.pagination-current a:active {
+    color: #000000;
+    background-color: #F2F2F2;
+    border: #F2F2F2 1px solid;
+}
+
 .pagination-link {
     background-color: #82B3D3;
     text-decoration: none;
