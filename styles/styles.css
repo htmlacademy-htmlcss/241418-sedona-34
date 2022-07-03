@@ -134,7 +134,11 @@ body {
 .navigation-user-item:nth-child(3) a:focus {
     background-color: #615048;
     border: none;
-    outline: none;
+}
+
+.navigation-user-item:nth-child(3) a:active {
+    background-color: #756157;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .navigation-user-item:nth-child(3) a:disabled {
@@ -156,7 +160,8 @@ body {
     bottom: 0;
     left: 0;
     margin: auto;
-    transform: translateY(3px) translateX(3px);
+    transform: translateY(3px) translateX(-2px);
+    padding: 15px 5px;
 }
 
 .favorite-icon {
@@ -166,7 +171,8 @@ body {
     bottom: 0;
     left: 0;
     margin: auto;
-    transform: translateY(3px) translateX(0);
+    transform: translateY(3px) translateX(-5px);
+    padding: 15px 5px;
 }
 
 span.favorites-header {
@@ -243,6 +249,7 @@ label.control {
 
 .logo-welcome {
     background-image: url("../images/main/background-index.jpg");
+    background-color: #81b3d3;
     background-size: cover;
     text-align: center;
     margin: 0;
@@ -446,16 +453,23 @@ label.control {
 
 .search-hotel a:focus {
     background-color: #615048;
-    outline: none;
+    border: none;
+}
+
+.search-hotel a:active {
+    background-color: #756157;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .search-hotel a:disabled {
     background-color: #E5E5E5;
 }
 
+
 .subscribe {
     background-image: url("../images/main/background-subscribe.jpg");
     background-repeat: no-repeat;
+    background-color: #365661;
     background-size: cover;
     font-family: inherit;
     color: #FFFFFF;
@@ -510,10 +524,6 @@ label.control {
     padding: 25px 22px 18px;
 }
 
-.subscribe input:focus,
-.subscribe input:active {
-    outline: none;
-}
 
 .subscribe button {
     width: 200px;
@@ -529,7 +539,12 @@ label.control {
 
 .subscribe button:focus {
     background-color: #68A2CA;
-    outline: none;
+    border: none;
+}
+
+.subscribe button:active {
+    background-color: #82B3D3;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .subscribe button:disabled {
@@ -599,9 +614,11 @@ label.control {
 
 .social-icon:focus {
     fill: #68A2CA;
-    outline: none;
 }
 
+.social-icon:active {
+    fill: rgba(104, 162, 202, 0.3);
+}
 
 .footer-contacts {
     display: flex;
@@ -628,7 +645,11 @@ label.control {
 
 .footer-contacts a:focus {
     color: #756157;
-    outline: none;
+
+}
+
+.footer-contacts a:active {
+    color: rgba(117, 97, 87, 0.3);
 }
 
 .footer-about-developers {
@@ -651,13 +672,18 @@ label.control {
 
 .developers-logo:focus {
     fill: #756157;
-    outline: none;
+
+}
+
+.developers-logo:active {
+    fill: rgba(117, 97, 87, 0.3);
 }
 
 .catalog-hotels-search {
     color: #FFFFFF;
     background-image: url("../images/catalog/background-catalog.jpg");
     background-size: cover;
+    background-color: #2B414F;
     margin: 0;
     padding: 38px 70px 47px 70px;
 }
@@ -683,10 +709,6 @@ label.control {
 
 }
 
-.breadcrumbs-link {
-    margin: auto;
-    padding: 0;
-}
 
 .breadcrumbs-link-icon {
     margin: 0;
@@ -695,7 +717,8 @@ label.control {
     display: block;
 }
 
-.breadcrumbs-link-icon:hover {
+.breadcrumbs-link-icon:hover,
+.breadcrumbs-link p:hover {
     opacity: 0.6;
 }
 
@@ -713,13 +736,20 @@ label.control {
     margin-left: 10px;
 }
 
-.breadcrumbs-item p {
+.breadcrumbs-link {
+    margin: auto;
+    padding: 0;
+    text-decoration: none;
+}
+
+.breadcrumbs-link p {
     display: block;
     font-size: 16px;
     line-height: 21px;
     font-weight: 400;
     margin: 0;
     padding: 0;
+    color: #FFFFFF;
 }
 
 .hotels-search-filter {
@@ -740,62 +770,96 @@ label.control {
 .filter-data h4 {
     margin: 0;
     padding-bottom: 30px;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+
 }
 
 .control {
-    padding-bottom: 15px;
+    padding-left: 36px;
     position: relative;
     display: block;
+    margin-bottom: 15px;
 }
 
-.control-input {
-    margin-right: 30px;
-    appearance: none;
+
+.control-input-checkbox {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
-.control-mark {
-    position: absolute;
-    top: -1px;
-    left: 1px;
+.control-input-checkbox + .control-mark {
     width: 20px;
     height: 20px;
-    background: #FFFFFF;
-    border-radius: 4px;
-}
-
-.control-mark:hover {
-    background: rgba(255, 255, 255, 0.6)
-}
-
-.control-mark:focus,
-.control-mark-radio:focus {
-    box-shadow: 0 0 0 3px #83B3D3;
-}
-
-.control-input[type="checkbox"]:checked+.control-mark::before,
-.control-input[type="checkbox"]:checked+.control-mark::after {
     position: absolute;
-    width: 12px;
-    height: 10px;
-    top: 6px;
-    left: 4px;
-    background-image: url("../images/catalog/checkbox-icon.svg");
-    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    left: 0;
+    margin: 0;
     content: "";
 }
 
-.control-mark-radio {
-    position: absolute;
-    box-sizing: border-box;
-    top: -1px;
-    left: 1px;
-    width: 20px;
-    height: 20px;
-    background: #FFFFFF;
-    border-radius: 50%;
+.control-input-checkbox:checked + .control-mark {
+    background-image: url(../images/catalog/checkbox-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
 }
 
-.control-input[type="radio"]:checked+.control-mark-radio::before {
+.control-input-checkbox:checked:focus + .control-mark {
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 0 3px #83B3D3;
+    background-image: url(../images/catalog/checkbox-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+}
+
+.control-input-checkbox:hover:checked + .control-mark {
+    background: rgba(255, 255, 255, 0.6);
+    background-image: url(../images/catalog/checkbox-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+}
+
+.control-input-checkbox:active:checked + .control-mark {
+    background: rgba(255, 255, 255, 0.3);
+    background-image: url(../images/catalog/checkbox-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+}
+
+
+.control-input-checkbox:focus + .control-mark {
+    box-shadow: 0 0 0 3px #83B3D3;
+}
+
+.control-input-checkbox:hover + .control-mark {
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.control-input-checkbox:active + .control-mark {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.control-input-radio {
+    -webkit-appearance: none;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    left: 0;
+    margin: 0;
+    content: "";
+
+}
+
+.control-input-radio:focus {
+    box-shadow: inset 0 0 0 3px #83B3D3;
+}
+
+.control-input-radio:checked + .control-mark-radio::before {
     position: absolute;
     width: 10px;
     height: 10px;
@@ -804,6 +868,11 @@ label.control {
     background-color: #3F5E72;
     border-radius: 50%;
     content: "";
+}
+
+.control-input-radio:focus:checked {
+    box-shadow: 0 0 0 3px #83B3D3;
+    outline: none;
 }
 
 .data-item {
@@ -816,7 +885,7 @@ label.control {
     flex-direction: column;
     border-style: none;
     min-width: 151px;
-    margin-right: 69px;
+    margin-right: 71px;
 }
 
 .type-of-house {
@@ -824,7 +893,7 @@ label.control {
     flex-direction: column;
     border-style: none;
     min-width: 146px;
-    margin-right: 175px;
+    margin-right: 174px;
 }
 
 .price-for-house {
@@ -862,9 +931,9 @@ label.control {
 }
 
 .control-price-for-house:focus-within {
+    outline: none;
     box-shadow: 0px 0px 0px 3px #81B3D2,
         inset 0px 0px 0px 3px #81B3D2;
-    outline: none;
 }
 
 .control-price-for-house:active {
@@ -887,8 +956,8 @@ label.control {
 }
 
 .range-input:focus {
-    outline: none;
     color: #ffffff;
+    outline: none;
 }
 
 .range-input-text {
@@ -986,7 +1055,11 @@ label.control {
 
 .button-catalog-additional:focus {
     background-color: #68A2CA;
-    outline: none;
+}
+
+.button-catalog-additional:active {
+    background-color: #82B3D3;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .button-catalog-additional:disabled {
@@ -1016,7 +1089,11 @@ label.control {
 
 .button-catalog-reset:focus {
     border: 3px solid #83B3D3;
-    outline: none;
+
+}
+
+.button-catalog-reset:active {
+    opacity: 0.3;
 }
 
 .hotels-search-results {
@@ -1052,16 +1129,7 @@ label.control {
     padding: 0;
 }
 
-.card-view-item {
-    display: inline-block;
-    box-sizing: border-box;
-    width: 48px;
-    height: 48px;
-    margin-right: 8px;
-    border-radius: 4px;
-}
-
-.card-view a {
+.card-view-link {
     display: flex;
     border: #E5E5E5 solid 2px;
     border-radius: 4px;
@@ -1069,25 +1137,23 @@ label.control {
     justify-content: center;
     box-sizing: border-box;
     padding: 15px 14px;
+    margin-right: 8px;
 }
 
-.card-view a:hover {
+.card-view-link-current {
     border: #000000 solid 2px;
 }
 
-.card-view a:focus {
+.card-view-link:hover {
+    border: #000000 solid 2px;
+}
+
+.card-view-link:focus {
     border: #68A2CA solid 2px;
-    outline: none;
 }
 
-.card-view a:active {
+.card-view-link:active {
     border: #000000 solid 2px;
-}
-
-.data-item-header {
-    font-size: 20px;
-    line-height: 26px;
-    font-weight: 700;
 }
 
 .price-filter {
@@ -1108,17 +1174,16 @@ label.control {
     appearance: none;
 }
 
-.price-filter:active {
-    border: #3F5E72 solid 2px;
-}
-
 .price-filter:hover {
     border: #68A2CA solid 2px;
 }
 
 .price-filter:focus {
     border: #68A2CA solid 2px;
-    outline: none;
+}
+
+.price-filter:active {
+    border: #3F5E72 solid 2px;
 }
 
 .price-filter:disabled {
@@ -1214,7 +1279,11 @@ a.button.card-main:hover {
 
 a.button.card-main:focus {
     background-color: #615048;
-    outline: none;
+}
+
+a.button.card-main:active {
+    background-color: #756157;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 a.button.card-main:disabled {
@@ -1244,7 +1313,12 @@ a.button.card-additional:hover {
 
 a.button.card-additional:focus {
     background-color: #68A2CA;
-    outline: none;
+    border: none;
+}
+
+a.button.card-additional:active {
+    background-color: #82B3D3;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 a.button.card-additional:disabled {
@@ -1274,7 +1348,11 @@ a.button.card-checked:hover {
 
 a.button.card-checked:focus {
     background-color: #6C9E42;
-    outline: none;
+}
+
+a.button.card-checked:active {
+    background-color: #7DB54F;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 a.button.card-checked:disabled {
@@ -1352,6 +1430,17 @@ a.button.card-checked:disabled {
     border: #F2F2F2 1px solid;
 }
 
+.pagination-current a:focus {
+    background-color: #F2F2F2;
+    border: #F2F2F2 1px solid;
+}
+
+.pagination-current a:active {
+    color: #000000;
+    background-color: #F2F2F2;
+    border: #F2F2F2 1px solid;
+}
+
 .pagination-link {
     background-color: #82B3D3;
     text-decoration: none;
@@ -1375,7 +1464,12 @@ a.button.card-checked:disabled {
     box-sizing: border-box;
     background-color: #68A2CA;
     border: #82B3D3 1px solid;
-    outline: none;
+}
+
+.pagination-link:active {
+    background-color: #82B3D3;
+    border: #82B3D3 1px solid;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-item:nth-last-child(1) {
@@ -1422,7 +1516,6 @@ label.block-text-size {
 
 .items-on-page:focus {
     border: #68A2CA solid 2px;
-    outline: none;
 }
 
 .items-on-page:active {
@@ -1472,11 +1565,18 @@ label.block-text-size {
     background-color: #68A2CA;
 }
 
-.subscribe-catalog button:focus,
-.subscribe-catalog button:active,
-.subscribe-catalog input:focus,
-.subscribe-catalog input:active {
-    outline: none;
+.subscribe-catalog button:focus {
+    background-color: #68A2CA;
+    border: none;
+}
+
+.subscribe-catalog button:active {
+    background-color: #82B3D3;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.subscribe-catalog button:disabled {
+    background-color: #E5E5E5;
 }
 
 .subscribe-catalog button {
@@ -1560,9 +1660,9 @@ label.block-text-size {
     color: rgba(0, 0, 0, 0.3);
 }
 
-/* .modal-container-close {
+.modal-container-close {
     display: none;
-} */
+}
 
 
 .modal-form {
@@ -1620,9 +1720,6 @@ label.block-text-size {
     border: transparent solid 3px;
     padding: 15px 18px 8px 18px;
     margin-bottom: 7px;
-    background-image: url("../images/modal/calendar-icon.svg");
-    background-repeat: no-repeat;
-    background-position: right 20px center;
     appearance: none;
     font-family: inherit;
     font-size: 18px;
@@ -1648,6 +1745,11 @@ label.block-text-size {
     border: #000000 solid 3px;
     color: rgba(0, 0, 0, 1);
     outline: none;
+}
+
+.calendar-icon {
+    transform: translateY(-49px) translateX(545px);
+    cursor: pointer;
 }
 
 .checkin-alert {
@@ -1822,6 +1924,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .modal-tooltip {
     position: relative;
 }
+
 .tooltip-toggle {
     position: absolute;
     border: none;
