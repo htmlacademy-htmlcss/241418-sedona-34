@@ -709,10 +709,6 @@ label.control {
 
 }
 
-.breadcrumbs-link {
-    margin: auto;
-    padding: 0;
-}
 
 .breadcrumbs-link-icon {
     margin: 0;
@@ -721,7 +717,8 @@ label.control {
     display: block;
 }
 
-.breadcrumbs-link-icon:hover {
+.breadcrumbs-link-icon:hover,
+.breadcrumbs-link p:hover {
     opacity: 0.6;
 }
 
@@ -739,13 +736,20 @@ label.control {
     margin-left: 10px;
 }
 
-.breadcrumbs-item p {
+.breadcrumbs-link {
+    margin: auto;
+    padding: 0;
+    text-decoration: none;
+}
+
+.breadcrumbs-link p {
     display: block;
     font-size: 16px;
     line-height: 21px;
     font-weight: 400;
     margin: 0;
     padding: 0;
+    color: #FFFFFF;
 }
 
 .hotels-search-filter {
@@ -800,16 +804,14 @@ label.control {
     background-image: url(../images/catalog/checkbox-icon.svg);
     background-repeat: no-repeat;
     background-position: 5px 5px;
-    position: absolute;
 }
 
-.control-input-checkbox:focus:checked + .control-mark {
+.control-input-checkbox:checked:focus + .control-mark {
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 0 0 0 3px #83B3D3;
     background-image: url(../images/catalog/checkbox-icon.svg);
     background-repeat: no-repeat;
     background-position: 5px 5px;
-    position: absolute;
 }
 
 .control-input-checkbox:hover:checked + .control-mark {
@@ -817,7 +819,6 @@ label.control {
     background-image: url(../images/catalog/checkbox-icon.svg);
     background-repeat: no-repeat;
     background-position: 5px 5px;
-    position: absolute;
 }
 
 .control-input-checkbox:active:checked + .control-mark {
@@ -825,7 +826,6 @@ label.control {
     background-image: url(../images/catalog/checkbox-icon.svg);
     background-repeat: no-repeat;
     background-position: 5px 5px;
-    position: absolute;
 }
 
 
