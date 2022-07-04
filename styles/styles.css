@@ -701,9 +701,9 @@ h3.reasons-title-white {
     color: #ffffff;
     background-image: url("../images/catalog/background-catalog.jpg");
     background-size: cover;
-    background-color: #2B414F;
+    background-color: #2b414f;
     margin: 0;
-    padding: 38px 70px 47px 70px;
+    padding: 36px 70px 47px 70px;
 }
 
 .catalog-hotels-search-header {
@@ -711,7 +711,7 @@ h3.reasons-title-white {
     line-height: 78px;
     font-weight: 700;
     margin-top: 0;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
     padding: 0;
 }
 
@@ -795,7 +795,7 @@ h3.reasons-title-white {
 }
 
 .control {
-    padding-left: 36px;
+    padding-left: 40px;
     position: relative;
     display: block;
     margin-bottom: 15px;
@@ -803,8 +803,11 @@ h3.reasons-title-white {
 
 
 .control-input-checkbox {
-    -webkit-appearance: none;
-    margin: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
 }
 
 .control-input-checkbox + .control-mark {
@@ -816,6 +819,7 @@ h3.reasons-title-white {
     left: 0;
     margin: 0;
     content: "";
+    -webkit-appearance: none;
 }
 
 .control-input-checkbox:checked + .control-mark {
@@ -995,6 +999,7 @@ h3.reasons-title-white {
     font-weight: 400;
     margin: 0;
     border: none;
+    appearance: textfield;
 }
 
 
@@ -1012,7 +1017,7 @@ h3.reasons-title-white {
     position: absolute;
     height: 4px;
     background-color: #ffffff;
-    left: 0; 
+    left: 0;
     width: 227px;
 
 }
@@ -2004,7 +2009,7 @@ label.block-text-size {
 }
 
 
-.tooltip-toggle:hover+.tooltip-text,
-.tooltip-toggle:focus+.tooltip-text {
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
     display: block;
 }
